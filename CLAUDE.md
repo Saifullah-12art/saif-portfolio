@@ -4,7 +4,7 @@ Personal website for Saif Ullah Nazari (software engineering student at AUCA, Bi
 
 ## Stack
 - Plain static site: `index.html`, `styles.css`, `main.js`, `favicon.svg`. No build step, no framework.
-- Fonts from Google Fonts: Bricolage Grotesque (display), IBM Plex Sans (body), IBM Plex Mono (labels).
+- Fonts are self-hosted woff2 in `fonts/` (no Google Fonts requests): Bricolage Grotesque 700–800 (display), IBM Plex Sans 400–600 (body), IBM Plex Mono 400 and 500 (labels). `@font-face` is at the top of `styles.css`; the Bricolage and Plex Sans latin files are preloaded in `index.html`. Using a new weight or style means adding its file and `@font-face`, otherwise the browser fakes it.
 - Deploy target: Vercel (static). `vercel` from this folder, or import the GitHub repo in the Vercel dashboard.
 
 ## Run locally
