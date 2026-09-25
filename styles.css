@@ -25,11 +25,15 @@
   /* text that sits on a bright fill (same in both themes) */
   --on-bright: #0E1033;
   --on-cobalt: #FFFFFF;
+  --on-bright-surface: #FFFFFF;             /* a white panel sitting on a bright fill */
+  --on-cobalt-rule: rgba(255, 255, 255, 0.3);
+  --on-cobalt-rule-strong: rgba(255, 255, 255, 0.35);
 
   /* text accents that must read on the ground */
+  --coral-heading: #F25130;                 /* large display text; 3:1 on the ground */
   --link: #2B44FF;
-  --coral-text: #D8361A;
-  --mint-text: #08865C;
+  --coral-text: #BF2E14;
+  --mint-text: #06734F;
 
   --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
@@ -53,6 +57,7 @@
     --mint-soft: #123D32;
     --link: #8C9BFF;
     --coral-text: #FF8C70;
+    --coral-heading: #FF6A48;
     --mint-text: #5EE3B2;
   }
 }
@@ -72,6 +77,7 @@
   --mint-soft: #123D32;
   --link: #8C9BFF;
   --coral-text: #FF8C70;
+  --coral-heading: #FF6A48;
   --mint-text: #5EE3B2;
 }
 
@@ -122,7 +128,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--sun); outline-o
   font-size: clamp(48px, 8vw, 96px); line-height: 0.92; letter-spacing: -0.04em;
   margin: 18px 0 28px; text-wrap: balance;
 }
-.hero h1 span { color: var(--coral); }
+.hero h1 span { color: var(--coral-heading); }
 .hero .lede { font-size: 19px; line-height: 1.55; max-width: 34em; margin: 0 0 30px; }
 .hero .lede em {
   font-style: normal; font-weight: 600; color: var(--on-bright);
@@ -146,20 +152,19 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--sun); outline-o
 }
 .day header { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 14px; }
 .day h2 { font-family: var(--display); font-weight: 800; font-size: 22px; margin: 0; letter-spacing: -0.01em; }
-.day .mono { opacity: 0.85; }
 .day ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 2px; }
 .day li {
   display: grid; grid-template-columns: 22px 1fr auto; gap: 12px; align-items: center;
-  padding: 9px 0; border-top: 1px dashed rgba(255, 255, 255, 0.3); font-size: 15px;
+  padding: 9px 0; border-top: 1px dashed var(--on-cobalt-rule); font-size: 15px;
 }
 .day li:first-child { border-top: 0; }
 .tick { width: 18px; height: 18px; border-radius: 5px; border: 2px solid var(--sun); }
-.day li .qty { font-family: var(--mono); font-size: 12px; opacity: 0.8; font-variant-numeric: tabular-nums; }
+.day li .qty { font-family: var(--mono); font-size: 12px; font-variant-numeric: tabular-nums; }
 .day footer {
-  margin-top: 12px; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.35);
-  font-size: 13px; opacity: 0.92;
+  margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--on-cobalt-rule-strong);
+  font-size: 13px;
 }
-.day footer b { color: var(--sun); font-weight: 700; }
+.day footer b { color: var(--on-bright); background: var(--sun); font-weight: 700; padding: 0 5px; border-radius: 4px; }
 
 /* ---------- sections ---------- */
 section.block {
@@ -262,7 +267,7 @@ cite { font-style: normal; }
   border-radius: 22px; padding: clamp(28px, 5vw, 56px);
   margin-block: 24px 40px;
 }
-.contact .label { color: var(--on-bright); opacity: 0.75; }
+.contact .label { color: var(--on-bright); }
 .contact h2.big {
   font-family: var(--display); font-weight: 800; font-size: clamp(36px, 6vw, 68px);
   letter-spacing: -0.035em; line-height: 0.98; margin: 12px 0 18px; text-wrap: balance; max-width: 16ch;
@@ -271,11 +276,11 @@ cite { font-style: normal; }
 .email-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 10px; }
 .email {
   font-family: var(--mono); font-size: 16px; padding: 12px 16px; border-radius: 12px;
-  background: #FFFFFF; color: #0E1033; text-decoration: none; overflow-wrap: anywhere;
-  border: 2px solid #0E1033;
+  background: var(--on-bright-surface); color: var(--on-bright); text-decoration: none; overflow-wrap: anywhere;
+  border: 2px solid var(--on-bright);
 }
-.contact .btn { border-color: #0E1033; color: #0E1033; }
-.contact .btn:hover { box-shadow: 4px 4px 0 #0E1033; }
+.contact .btn { border-color: var(--on-bright); color: var(--on-bright); }
+.contact .btn:hover { box-shadow: 4px 4px 0 var(--on-bright); }
 .copied { font-size: 14px; font-weight: 600; min-height: 1.3em; }
 
 /* ---------- footer ---------- */
