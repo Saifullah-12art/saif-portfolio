@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Saif Ullah Nazari</title>
+  <meta name="description" content="Saif Ullah Nazari: software engineering student at AUCA in Bishkek, building Ascenda, an AI-powered daily routine and accountability app.">
+  <meta property="og:title" content="Saif Ullah Nazari">
+  <meta property="og:description" content="Software engineering student at AUCA. Building Ascenda.">
+  <meta name="theme-color" content="#2B44FF">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="#">Saif Nazari<span class="dot" aria-hidden="true"></span></a>
+    <nav aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#reading">Reading</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="reveal">
+      <div class="label">Software Engineering · AUCA · Bishkek</div>
+      <h1>Saif Ullah <span>Nazari</span></h1>
+      <p class="lede">I'm a software engineering student at the American University of Central Asia. I'm building <em>Ascenda</em>, an AI-powered app that helps students plan their day and hold each other to it. I work across C++, Python and the web, and I'm learning in public on the way to cloud and machine learning.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://ascenda-omega.vercel.app" target="_blank" rel="noopener">Try Ascenda ↗</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <aside class="day reveal" aria-label="My daily standard">
+      <header>
+        <h2>The daily standard</h2>
+        <span class="mono" id="today">Every day</span>
+      </header>
+      <ul>
+        <li><span class="tick" aria-hidden="true"></span>Push-ups<span class="qty">× 30</span></li>
+        <li><span class="tick" aria-hidden="true"></span>Meditation<span class="qty">daily</span></li>
+        <li><span class="tick" aria-hidden="true"></span>Reading<span class="qty">daily</span></li>
+        <li><span class="tick" aria-hidden="true"></span>One LeetCode problem<span class="qty">× 1</span></li>
+        <li><span class="tick" aria-hidden="true"></span>Mathematics<span class="qty">daily</span></li>
+        <li><span class="tick" aria-hidden="true"></span>One podcast<span class="qty">× 1</span></li>
+        <li><span class="tick" aria-hidden="true"></span>Write on Substack<span class="qty">× 1 post</span></li>
+        <li><span class="tick" aria-hidden="true"></span>An hour alone with my thoughts<span class="qty">60 min</span></li>
+      </ul>
+      <footer>This list is the reason <b>Ascenda</b> exists. I wanted a tool that makes a routine like this stick.</footer>
+    </aside>
+  </section>
+
+  <section class="block" id="work">
+    <div class="side">
+      <div class="label">Work</div>
+      <h2>Things I'm building</h2>
+    </div>
+    <div>
+      <article class="feature">
+        <div class="feature-top">
+          <span class="label">Main project</span>
+          <span class="chip live">Live</span>
+        </div>
+        <h3>Ascenda</h3>
+        <p>An AI-powered daily routine and accountability app for university students. You set your goals, Ascenda builds a realistic routine around them with Claude, and your friends on campus keep you honest. The web version is live, and I'm launching it on the AUCA campus first.</p>
+        <div class="meta">
+          <span>AI routine generation · Social accountability · Modular architecture</span>
+          <a href="https://ascenda-omega.vercel.app" target="_blank" rel="noopener">ascenda-omega.vercel.app ↗</a>
+        </div>
+      </article>
+
+      <ul class="rows">
+        <li>
+          <div>
+            <h3>XAUUSD trading bot</h3>
+            <p>An automated gold trading system for MetaTrader 5. Version one runs a moving-average crossover with an RSI filter, a dedicated risk-management module, trade logging and a monitoring dashboard. The architecture is modular so machine-learning models can plug in later.</p>
+            <div class="stack">Python · MetaTrader5 bridge · pandas</div>
+          </div>
+          <span class="chip plan">In planning</span>
+        </li>
+        <li>
+          <div>
+            <h3>Kenyan Coffee Co. store</h3>
+            <p>Building a Shopify storefront for a specialty coffee brand as a collaborator through my Shopify Partner account: catalogue of 9 products and 27 variants, brand setup and theme work.</p>
+            <div class="stack">Shopify · Liquid · product CSV import</div>
+          </div>
+          <span class="chip client">Client work</span>
+        </li>
+        <li>
+          <div>
+            <h3>Multithreaded HTTP server in C</h3>
+            <p>A web server built on a producer–consumer model with POSIX threads: one thread accepts connections into a bounded queue, a worker pool serves them.</p>
+            <div class="stack">C · pthreads · sockets</div>
+          </div>
+          <span class="chip done">Systems course</span>
+        </li>
+        <li>
+          <div>
+            <h3>Qt6 text editor</h3>
+            <p>A desktop notepad written in C++ with Qt6: edit and format menus, text transformations, a spell checker and syntax highlighting, built and tested through GitHub Actions CI.</p>
+            <div class="stack">C++ · Qt6 · GitHub Actions</div>
+          </div>
+          <span class="chip done">OOP course</span>
+        </li>
+        <li>
+          <div>
+            <h3>ARM assembly series</h3>
+            <p>Nine low-level programs covering arithmetic, condition flags, branching, memory addressing modes and subroutines, written and debugged in Keil µVision.</p>
+            <div class="stack">ARM Assembly · Keil µVision</div>
+          </div>
+          <span class="chip done">Coursework</span>
+        </li>
+        <li>
+          <div>
+            <h3>Footie Lovers</h3>
+            <p>A football YouTube channel: match previews for the 2026 World Cup, league histories and debate-style countdowns like the greatest solo goal ever scored.</p>
+            <div class="stack">Scriptwriting · Video</div>
+          </div>
+          <span class="chip side">Side project</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="skills">
+    <div class="side">
+      <div class="label">Skills</div>
+      <h2>What I work with</h2>
+    </div>
+    <div class="skills">
+      <div class="skill-col c1">
+        <h3 class="label">Languages</h3>
+        <ul>
+          <li>C++ (OOP, Qt6)</li>
+          <li>Python</li>
+          <li>C</li>
+          <li>ARM Assembly</li>
+          <li>JavaScript, HTML, CSS</li>
+        </ul>
+      </div>
+      <div class="skill-col c2">
+        <h3 class="label">Tools</h3>
+        <ul>
+          <li>Git &amp; GitHub Actions</li>
+          <li>Claude Code &amp; MCP</li>
+          <li>Claude API</li>
+          <li>Vercel</li>
+          <li>Shopify</li>
+        </ul>
+      </div>
+      <div class="skill-col c3">
+        <h3 class="label">Interests</h3>
+        <ul>
+          <li>AI products</li>
+          <li>Machine learning</li>
+          <li>Cloud (AWS)</li>
+          <li>Algorithmic trading</li>
+          <li>Systems programming</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="roadmap">
+    <div class="side">
+      <div class="label">May 2026 → May 2027</div>
+      <h2>My 52-week roadmap</h2>
+    </div>
+    <div>
+      <p class="intro">I'm following a year-long plan that pairs certifications with about 20 hours a week of real product work on Ascenda.</p>
+      <ol class="road">
+        <li class="done">
+          <span class="when label">Completed · April 2026</span>
+          <strong>Claude Code in Action</strong>
+          <p>Agentic coding workflows, custom commands and MCP servers.</p>
+        </li>
+        <li class="now">
+          <span class="when label">In progress</span>
+          <strong>IBM Full Stack Software Developer</strong>
+          <p>Professional certificate on Coursera: front end, back end, cloud and DevOps.</p>
+        </li>
+        <li>
+          <span class="when label">Next</span>
+          <strong>AWS Cloud Practitioner → Developer Associate</strong>
+          <p>Cloud foundations, then building and deploying on AWS.</p>
+        </li>
+        <li>
+          <span class="when label">Then</span>
+          <strong>DeepLearning.AI ML Specialization &amp; TensorFlow Developer</strong>
+          <p>The maths and practice of machine learning.</p>
+        </li>
+        <li>
+          <span class="when label">Capstone</span>
+          <strong>AWS Machine Learning Specialty</strong>
+          <p>Putting ML into production on the cloud.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="reading">
+    <div class="side">
+      <div class="label">Off the keyboard</div>
+      <h2>Reading &amp; thinking</h2>
+    </div>
+    <div>
+      <blockquote>You have power over your mind, not outside events.</blockquote>
+      <cite class="label">Marcus Aurelius, <i>Meditations</i></cite>
+      <div class="prose">
+        <p>I think of myself as a Stoic. Most of what I build comes back to one question: how do you keep showing up on the days you don't feel like it? Outside of code I read philosophy and the history and literature of Central Asia, and I'm learning Russian.</p>
+      </div>
+      <div class="shelf">
+        <div><b>Meditations</b><span>Marcus Aurelius</span></div>
+        <div><b>The Orkhon Inscriptions</b><span>The oldest Old Turkic texts, 8th century</span></div>
+        <div><b>Mir ʿAli Shir Navaʾi</b><span>Poet of Chagatai Turkic literature</span></div>
+        <div><b>Frankenstein</b><span>Mary Shelley</span></div>
+        <div><b>On Truth and Lies in a Nonmoral Sense</b><span>Friedrich Nietzsche</span></div>
+        <div><b>What Is Enlightenment?</b><span>Immanuel Kant</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="label">Contact</div>
+    <h2 class="big">Building something? Let's talk.</h2>
+    <p>I'm open to internships, collaborations and conversations about AI products, full-stack work and trading systems.</p>
+    <div class="email-row">
+      <a class="email" id="email" href="mailto:Saifullah.nazar123@gmail.com">Saifullah.nazar123@gmail.com</a>
+      <button class="btn" id="copy" type="button">Copy email</button>
+    </div>
+    <div class="copied" id="copied" aria-live="polite"></div>
+  </section>
+
+  <footer class="foot mono">
+    <span>Saif Ullah Nazari · Bishkek, Kyrgyzstan</span>
+    <span>42.87° N, 74.59° E</span>
+  </footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
