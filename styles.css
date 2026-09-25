@@ -304,6 +304,7 @@ cite { font-style: normal; }
   .feature { padding: 22px; }
   .feature h3 { font-size: 34px; }
   .day { box-shadow: 6px 6px 0 var(--sun); }
+  .email { font-size: 14px; padding: 12px 14px; }
 }
 
 /* ---------- motion ---------- */
