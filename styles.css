@@ -193,7 +193,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--sun); outline-o
   margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--on-cobalt-rule-strong);
   font-size: 13px;
 }
-.day footer b { color: var(--on-bright); background: var(--sun); font-weight: 700; padding: 0 5px; border-radius: 4px; }
+.day footer b { color: var(--on-bright); background: var(--sun); font-weight: 600; padding: 0 5px; border-radius: 4px; }
 
 /* ---------- sections ---------- */
 section.block {
@@ -256,7 +256,7 @@ section.block > .side h2 {
 }
 .skill-col.c2 { border-top-color: var(--coral); }
 .skill-col.c3 { border-top-color: var(--mint); }
-.skills h3 { margin: 0 0 12px; color: var(--ink); }
+.skills h3 { margin: 0 0 12px; color: var(--ink); font-weight: 500; }
 .skills ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 7px; }
 .skills li { font-size: 15px; }
 
@@ -284,7 +284,7 @@ blockquote {
 }
 blockquote::before { content: "“"; color: var(--coral); }
 blockquote::after { content: "”"; color: var(--coral); }
-cite { font-style: normal; }
+cite, cite i { font-style: normal; }
 .shelf { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 32px; margin-top: 24px; }
 .shelf div { padding-block: 12px; border-top: 1px solid var(--line); }
 .shelf b { display: block; font-weight: 600; }
