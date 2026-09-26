@@ -26,6 +26,7 @@
   <link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/instrument-serif-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="stylesheet" href="styles.css">
   <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__site)document.documentElement.classList.remove('js')},3000)</script>
   <script src="config.js" defer></script>
@@ -43,8 +44,9 @@
       <a class="u" href="index.html#building" data-section="building">Building</a>
       <a class="u" href="ideas.html">Ideas</a>
       <a class="u" href="index.html#contact" data-section="contact">Contact</a>
+      <button class="theme-toggle theme-toggle--menu label ink" type="button" data-theme-toggle aria-label="Switch colour theme"><svg class="i-moon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13.5 9.6A5.75 5.75 0 0 1 6.4 2.5a5.75 5.75 0 1 0 7.1 7.1Z"/></svg><svg class="i-sun" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3.05 3.05l1.13 1.13M11.82 11.82l1.13 1.13M3.05 12.95l1.13-1.13M11.82 4.18l1.13-1.13"/></svg><span data-theme-text>Theme</span></button>
     </nav>
-    <span class="nav-loc label ink">Bishkek, KG <span class="dot pulse" aria-hidden="true"></span></span>
+    <span class="nav-loc label ink">Bishkek, KG <span class="dot pulse" aria-hidden="true"></span><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch colour theme"><svg class="i-moon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M13.5 9.6A5.75 5.75 0 0 1 6.4 2.5a5.75 5.75 0 1 0 7.1 7.1Z"/></svg><svg class="i-sun" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3.05 3.05l1.13 1.13M11.82 11.82l1.13 1.13M3.05 12.95l1.13-1.13M11.82 4.18l1.13-1.13"/></svg></button></span>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu"><span class="label ink">Menu</span><span class="bars" aria-hidden="true"></span></button>
   </div>
 </header>

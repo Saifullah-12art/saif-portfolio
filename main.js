@@ -25,6 +25,36 @@
     });
   }
 
+  // ---- theme toggle: follows the system until clicked; the <head> script restores a saved choice ----
+  var themeBtns = document.querySelectorAll('[data-theme-toggle]');
+  var systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+  function isDark() {
+    var t = root.getAttribute('data-theme');
+    return t ? t === 'dark' : systemDark.matches;
+  }
+  function syncTheme() {
+    var dark = isDark();
+    themeBtns.forEach(function (b) {
+      b.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+      var txt = b.querySelector('[data-theme-text]');
+      if (txt) txt.textContent = dark ? 'Light theme' : 'Dark theme';
+    });
+    if (root.hasAttribute('data-theme')) {
+      var paper = getComputedStyle(root).getPropertyValue('--paper').trim();
+      document.querySelectorAll('meta[name="theme-color"]').forEach(function (m) { m.setAttribute('content', paper); });
+    }
+  }
+  themeBtns.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      syncTheme();
+    });
+  });
+  systemDark.addEventListener('change', syncTheme);
+  syncTheme();
+
   // ---- nav: scrolled state ----
   var nav = document.querySelector('[data-nav]');
   function onScrollNav() { if (nav) nav.classList.toggle('scrolled', window.scrollY > 8); }
