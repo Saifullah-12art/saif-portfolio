@@ -1,11 +1,11 @@
-# Saif Ullah Nazari — personal site
+# Saifullah Nazari — personal site
 
-Static personal website. No build step.
+Static, editorial personal website. No build step, no framework.
 
 ## Run locally
 
 ```bash
-npx serve .
+npm run dev      # = npx serve . -l 3000
 ```
 
 Then open http://localhost:3000. Opening `index.html` directly in a browser also works.
@@ -13,21 +13,33 @@ Then open http://localhost:3000. Opening `index.html` directly in a browser also
 ## Deploy to Vercel
 
 ```bash
-npm i -g vercel
 vercel          # preview deploy
 vercel --prod   # production
 ```
 
-Or push to GitHub and import the repo at vercel.com/new (framework preset: "Other").
+Or import the GitHub repo at vercel.com/new (framework preset: "Other"). `cleanUrls` serves `/work`, `/about`, `/ideas`.
 
 ## Files
 
 | File | What it is |
 | --- | --- |
-| `index.html` | All page content |
+| `index.html` | Home: hero, the eight Building & Growth chapters, closing question, contact |
+| `work.html` | Selected work as case studies |
+| `about.html` | The longer story, reading, daily standard, roadmap |
+| `ideas.html` | Index of forthcoming essays |
+| `config.js` | **Edit me:** email and social links (empty links are hidden) |
 | `styles.css` | Design tokens (top of file), layout, light and dark themes |
-| `main.js` | Today's date on the daily card, copy-email button |
-| `favicon.svg` | Tab icon |
-| `fonts/` | Self-hosted woff2 fonts (only the weights the page uses) |
-| `og-image.png` | 1200×630 link-preview image |
-| `CLAUDE.md` | Project notes for Claude Code |
+| `main.js` | Nav state, mobile menu, reveal animations, hero parallax, copy email |
+| `favicon.svg`, `og-image.png` | Tab icon and 1200×630 link preview |
+| `fonts/` | Self-hosted woff2: Instrument Serif, IBM Plex Sans, IBM Plex Mono |
+
+## Filling in what's missing
+
+Search the HTML for `EDIT:` and `Image slot` comments.
+
+- **Social links:** add LinkedIn, Substack, YouTube, Instagram URLs in `config.js`.
+- **Photos:** every figure is an SVG plate. To use a photograph instead, put it in `images/` and replace the `<svg>` inside `.plate` with an `<img>` (keep `loading="lazy"` below the fold). The plate adds the shared grain and muted grading.
+- **Portrait:** uncomment the photo slot in `about.html` and add `images/portrait.jpg`.
+- **Work details:** roles, dates and organisation names for startup, teaching and community work.
+- **Essays:** see the comment above the list in `ideas.html` for how to publish one.
+- **Domain:** once the site has its own domain, add `<link rel="canonical">` and make `og:image` absolute (see the comment in each page's `<head>`).

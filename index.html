@@ -3,300 +3,448 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Saif Ullah Nazari</title>
-  <meta name="description" content="Saif Ullah Nazari: software engineering student at AUCA in Bishkek, building Ascenda, an AI-powered daily routine and accountability app.">
-  <meta property="og:title" content="Saif Ullah Nazari">
-  <meta property="og:description" content="Software engineering student at AUCA. Building Ascenda.">
+  <title>Saifullah Nazari — Software, AI, Markets &amp; Building</title>
+  <meta name="description" content="Personal website of Saifullah Nazari — software engineering student, builder, trader, investor, and educator exploring software, AI, entrepreneurship, markets, and meaningful technology.">
+  <meta name="author" content="Saifullah Nazari">
+  <!-- Once the site has its own domain, add: <link rel="canonical" href="https://YOUR-DOMAIN/PAGE"> and make og:image absolute. -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Saifullah Nazari">
+  <meta property="og:title" content="Saifullah Nazari — Software, AI, Markets &amp; Building">
+  <meta property="og:description" content="Personal website of Saifullah Nazari — software engineering student, builder, trader, investor, and educator exploring software, AI, entrepreneurship, markets, and meaningful technology.">
   <meta property="og:image" content="og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Saif Ullah Nazari. Software Engineering, AUCA, Bishkek. Building Ascenda.">
+  <meta property="og:image:alt" content="Saifullah Nazari. Curiosity. Discipline. And a bigger horizon.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Saif Ullah Nazari">
-  <meta name="twitter:description" content="Software engineering student at AUCA. Building Ascenda.">
+  <meta name="twitter:title" content="Saifullah Nazari — Software, AI, Markets &amp; Building">
+  <meta name="twitter:description" content="Personal website of Saifullah Nazari — software engineering student, builder, trader, investor, and educator exploring software, AI, entrepreneurship, markets, and meaningful technology.">
   <meta name="twitter:image" content="og-image.png">
-  <meta name="theme-color" content="#2B44FF">
+  <meta name="theme-color" content="#F3F0E7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F1419" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/instrument-serif-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/ibm-plex-sans-600-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__site)document.documentElement.classList.remove('js')},3000)</script>
+  <script src="config.js" defer></script>
+  <script src="main.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Saifullah Nazari","description":"Software engineering student, builder and educator exploring software, AI, markets and entrepreneurship.","affiliation":{"@type":"CollegeOrUniversity","name":"American University of Central Asia"},"homeLocation":{"@type":"Place","name":"Bishkek, Kyrgyzstan"},"knowsAbout":["Software engineering","Artificial intelligence","Product development","Financial markets","Teaching"],"sameAs":["https://github.com/Saifullah-12art"]}</script>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <a class="mark" href="#">Saif Nazari<span class="dot" aria-hidden="true"></span></a>
-    <nav aria-label="Sections">
-      <a href="#work">Work</a>
-      <a href="#skills">Skills</a>
-      <a href="#roadmap">Roadmap</a>
-      <a href="#thinking">Thinking</a>
-      <a href="#contact">Contact</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" data-nav>
+  <div class="shell nav-inner">
+    <a class="brand" href="index.html" aria-current="page">Saifullah Nazari.</a>
+    <nav id="menu" class="nav-links" aria-label="Primary">
+      <a class="u" href="about.html">About</a>
+      <a class="u" href="work.html">Work</a>
+      <a class="u" href="index.html#building" data-section="building">Building</a>
+      <a class="u" href="ideas.html">Ideas</a>
+      <a class="u" href="index.html#contact" data-section="contact">Contact</a>
     </nav>
-  </header>
+    <span class="nav-loc label ink">Bishkek, KG <span class="dot pulse" aria-hidden="true"></span></span>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu"><span class="label ink">Menu</span><span class="bars" aria-hidden="true"></span></button>
+  </div>
+</header>
+<main id="main">
 
-  <section class="hero">
-    <div class="reveal">
-      <div class="label">Saif Ullah Nazari · AUCA · Bishkek</div>
-      <h1><span>Student.</span> <em>Builder.</em> <span>Stoic.</span></h1>
-      <p class="lede">I'm a software engineering student at the American University of Central Asia. I'm building <em>Ascenda</em>, an AI-powered app that helps students plan their day and hold each other to it. I work across C++, Python and the web, and I'm learning in public on the way to cloud and machine learning.</p>
-      <div class="cta">
-        <a class="btn primary" href="https://ascenda-omega.vercel.app" target="_blank" rel="noopener">Try Ascenda ↗</a>
-        <a class="btn" href="#contact">Get in touch</a>
+  <!-- ================= HERO ================= -->
+  <section class="hero shell" aria-labelledby="hero-title">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="label ink reveal">Building &amp; Growth</p>
+        <h1 class="display" id="hero-title">
+          <span class="line"><span>Curiosity.</span></span>
+          <span class="line"><span>Discipline.</span></span>
+          <span class="line indent"><span>and a bigger</span></span>
+          <span class="line indent"><span><em>horizon.</em></span></span>
+        </h1>
+        <p class="lede reveal d2">I’m a software engineering student, builder, and lifelong learner interested in the intersection of technology, entrepreneurship, markets, and human potential. I’m exploring how to use software and AI to create real value, build meaningful products, and contribute to the communities that shaped me.</p>
       </div>
-    </div>
 
-    <aside class="day reveal" aria-label="My daily standard">
-      <header>
-        <h2>The daily standard</h2>
-        <span class="mono" id="today">Every day</span>
-      </header>
-      <ul>
-        <li><span class="tick" aria-hidden="true"></span>Push-ups<span class="qty">× 30</span></li>
-        <li><span class="tick" aria-hidden="true"></span>Meditation<span class="qty">daily</span></li>
-        <li><span class="tick" aria-hidden="true"></span>Reading<span class="qty">daily</span></li>
-        <li><span class="tick" aria-hidden="true"></span>One LeetCode problem<span class="qty">× 1</span></li>
-        <li><span class="tick" aria-hidden="true"></span>Mathematics<span class="qty">daily</span></li>
-        <li><span class="tick" aria-hidden="true"></span>One podcast<span class="qty">× 1</span></li>
-        <li><span class="tick" aria-hidden="true"></span>Write on Substack<span class="qty">× 1 post</span></li>
-        <li><span class="tick" aria-hidden="true"></span>An hour alone with my thoughts<span class="qty">60 min</span></li>
-      </ul>
-      <footer>This list is the reason <b>Ascenda</b> exists. I wanted a tool that makes a routine like this stick.</footer>
-    </aside>
-  </section>
-
-  <!-- Wide photo: add photo.jpg to the project root, then uncomment. Set width/height to the file's real pixel size.
-  <figure class="photo">
-    <img src="photo.jpg" alt="Saif Ullah Nazari" width="1600" height="900" loading="lazy" decoding="async">
-  </figure>
-  -->
-
-  <section class="block" id="work">
-    <div class="side">
-      <div class="label">Work</div>
-      <h2>Things I'm building</h2>
-    </div>
-    <div>
-      <article class="feature">
-        <div class="feature-top">
-          <span class="label">Main project · AI product</span>
-          <span class="chip live">Live</span>
+      <figure class="hero-figure mask">
+        <!-- Image slot: to use a photograph, replace the <svg> with
+             <img src="images/hero.jpg" alt="…" width="1600" height="2000" fetchpriority="high"> -->
+        <div class="plate">
+          <svg viewBox="0 0 800 1000" preserveAspectRatio="xMidYMax slice" role="img" aria-labelledby="art-hero">
+            <title id="art-hero">Layered mountain ridges fading toward a distant horizon at first light</title>
+            <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="a-sky-top"/><stop offset=".6" class="a-sky-low"/></linearGradient></defs>
+            <rect width="800" height="1000" fill="url(#sky)"/>
+            <g class="a-hair"><path d="M0 220H800M0 300H800M0 372H800M0 436H800"/></g>
+            <circle class="a-line parallax" data-depth="0.09" cx="548" cy="468" r="58"/>
+            <path class="r1 parallax" data-depth="0.07" d="M0 1000L0.0 543.3L6.3 542.3L12.5 545.6L18.8 541.2L25.0 539.0L31.3 535.1L37.5 536.1L43.8 534.0L50.0 528.2L56.3 526.6L62.5 526.5L68.8 522.8L75.0 520.0L81.3 522.4L87.5 526.9L93.8 525.7L100.0 527.5L106.3 531.0L112.5 533.3L118.8 531.3L125.0 531.3L131.3 534.7L137.5 539.8L143.8 539.1L150.0 540.1L156.3 538.0L162.5 540.0L168.8 543.3L175.0 548.5L181.3 550.3L187.5 551.3L193.8 550.2L200.0 547.8L206.3 547.5L212.5 552.0L218.8 553.3L225.0 558.0L231.3 557.9L237.5 557.9L243.8 557.8L250.0 553.0L256.3 551.6L262.5 551.0L268.8 551.0L275.0 555.6L281.3 558.0L287.5 560.7L293.8 563.8L300.0 562.2L306.3 564.3L312.5 562.4L318.8 563.8L325.0 563.3L331.3 565.0L337.5 564.6L343.8 563.1L350.0 566.4L356.3 563.7L362.5 560.6L368.8 560.4L375.0 558.4L381.3 559.8L387.5 556.6L393.8 553.2L400.0 548.6L406.3 543.5L412.5 542.5L418.8 540.6L425.0 537.1L431.3 538.3L437.5 539.0L443.8 541.5L450.0 542.1L456.3 543.4L462.5 544.6L468.8 546.9L475.0 551.1L481.3 550.1L487.5 549.6L493.8 546.8L500.0 547.3L506.3 550.2L512.5 553.7L518.8 555.7L525.0 559.5L531.3 568.6L537.5 573.8L543.8 581.5L550.0 587.5L556.3 588.1L562.5 590.3L568.8 595.6L575.0 598.7L581.3 599.4L587.5 598.0L593.8 598.4L600.0 600.0L606.3 601.7L612.5 599.9L618.8 595.9L625.0 596.6L631.3 592.0L637.5 592.3L643.8 584.4L650.0 579.6L656.3 577.8L662.5 576.0L668.8 575.9L675.0 577.1L681.3 572.5L687.5 569.6L693.8 570.4L700.0 567.4L706.3 568.2L712.5 567.7L718.8 572.7L725.0 576.2L731.3 576.0L737.5 577.9L743.8 580.1L750.0 579.5L756.3 575.5L762.5 570.2L768.8 566.1L775.0 566.8L781.3 566.9L787.5 571.1L793.8 569.5L800.0 569.4L800 1000Z"/>
+            <path class="r2 parallax" data-depth="0.05" d="M0 1000L0.0 579.9L6.3 582.7L12.5 585.0L18.8 586.4L25.0 587.2L31.3 586.6L37.5 589.7L43.8 590.9L50.0 590.5L56.3 596.5L62.5 598.8L68.8 603.7L75.0 605.1L81.3 606.9L87.5 609.8L93.8 607.1L100.0 607.8L106.3 607.3L112.5 604.7L118.8 603.9L125.0 604.7L131.3 602.1L137.5 594.9L143.8 593.5L150.0 592.1L156.3 596.2L162.5 597.5L168.8 600.3L175.0 598.8L181.3 600.9L187.5 600.8L193.8 600.9L200.0 597.3L206.3 597.1L212.5 598.7L218.8 601.8L225.0 605.7L231.3 605.0L237.5 605.9L243.8 600.7L250.0 599.9L256.3 603.3L262.5 603.2L268.8 604.5L275.0 608.5L281.3 608.9L287.5 606.0L293.8 606.0L300.0 604.4L306.3 606.3L312.5 605.1L318.8 603.8L325.0 598.4L331.3 595.4L337.5 596.8L343.8 597.6L350.0 601.5L356.3 604.3L362.5 608.9L368.8 609.0L375.0 608.9L381.3 613.6L387.5 615.1L393.8 619.0L400.0 625.3L406.3 626.3L412.5 624.5L418.8 626.3L425.0 626.4L431.3 621.9L437.5 620.1L443.8 620.3L450.0 621.6L456.3 622.6L462.5 620.6L468.8 616.7L475.0 615.5L481.3 615.7L487.5 614.0L493.8 616.0L500.0 617.0L506.3 619.5L512.5 624.0L518.8 627.8L525.0 634.4L531.3 636.8L537.5 637.0L543.8 637.8L550.0 636.6L556.3 635.1L562.5 634.2L568.8 632.0L575.0 627.8L581.3 627.3L587.5 627.7L593.8 631.7L600.0 632.1L606.3 634.5L612.5 637.8L618.8 638.6L625.0 635.7L631.3 633.2L637.5 632.3L643.8 630.8L650.0 630.6L656.3 632.1L662.5 636.4L668.8 634.3L675.0 633.8L681.3 634.5L687.5 634.3L693.8 637.9L700.0 638.7L706.3 638.1L712.5 633.5L718.8 628.7L725.0 623.5L731.3 621.8L737.5 622.2L743.8 620.6L750.0 620.7L756.3 616.3L762.5 614.6L768.8 614.2L775.0 614.7L781.3 614.5L787.5 612.3L793.8 613.9L800.0 617.7L800 1000Z"/>
+            <path class="r3 parallax" data-depth="0.035" d="M0 1000L0.0 779.0L6.3 779.5L12.5 779.1L18.8 779.2L25.0 777.0L31.3 776.7L37.5 777.8L43.8 779.5L50.0 780.4L56.3 779.8L62.5 781.6L68.8 783.2L75.0 782.0L81.3 781.4L87.5 781.1L93.8 779.2L100.0 775.8L106.3 773.8L112.5 774.4L118.8 774.9L125.0 775.0L131.3 775.4L137.5 774.1L143.8 775.1L150.0 774.3L156.3 771.5L162.5 768.4L168.8 769.4L175.0 767.6L181.3 764.0L187.5 762.8L193.8 757.0L200.0 754.0L206.3 751.9L212.5 748.3L218.8 748.0L225.0 745.4L231.3 747.1L237.5 747.9L243.8 745.7L250.0 746.3L256.3 747.5L262.5 748.8L268.8 751.2L275.0 752.0L281.3 752.3L287.5 754.7L293.8 753.6L300.0 753.7L306.3 752.1L312.5 752.6L318.8 750.7L325.0 746.4L331.3 746.1L337.5 748.5L343.8 745.6L350.0 745.0L356.3 740.3L362.5 737.6L368.8 736.4L375.0 734.2L381.3 734.0L387.5 731.8L393.8 730.2L400.0 729.8L406.3 728.0L412.5 724.1L418.8 721.2L425.0 720.6L431.3 718.4L437.5 717.4L443.8 717.5L450.0 715.4L456.3 714.4L462.5 714.9L468.8 713.0L475.0 711.2L481.3 708.8L487.5 705.0L493.8 703.1L500.0 701.9L506.3 703.0L512.5 703.5L518.8 702.4L525.0 703.6L531.3 700.9L537.5 700.9L543.8 701.5L550.0 699.1L556.3 699.0L562.5 699.0L568.8 695.1L575.0 694.0L581.3 692.7L587.5 689.9L593.8 684.5L600.0 681.9L606.3 682.7L612.5 684.7L618.8 684.4L625.0 683.5L631.3 682.2L637.5 680.0L643.8 680.1L650.0 678.5L656.3 674.6L662.5 672.4L668.8 670.3L675.0 668.9L681.3 668.4L687.5 667.9L693.8 663.9L700.0 661.4L706.3 659.1L712.5 655.4L718.8 653.8L725.0 654.6L731.3 655.9L737.5 654.5L743.8 651.6L750.0 651.6L756.3 651.8L762.5 649.6L768.8 647.4L775.0 647.0L781.3 649.5L787.5 649.4L793.8 649.5L800.0 649.5L800 1000Z"/>
+            <path class="r4 parallax" data-depth="0.02" d="M0 1000L0.0 769.1L6.3 769.3L12.5 771.2L18.8 771.5L25.0 770.7L31.3 771.8L37.5 774.1L43.8 774.5L50.0 776.4L56.3 777.8L62.5 777.7L68.8 779.7L75.0 780.5L81.3 782.5L87.5 785.8L93.8 786.5L100.0 787.5L106.3 787.2L112.5 788.3L118.8 788.2L125.0 786.7L131.3 787.5L137.5 789.2L143.8 791.5L150.0 792.4L156.3 793.2L162.5 793.9L168.8 793.7L175.0 794.8L181.3 794.0L187.5 793.6L193.8 794.6L200.0 795.2L206.3 793.7L212.5 790.6L218.8 789.6L225.0 788.7L231.3 787.3L237.5 785.2L243.8 783.3L250.0 783.2L256.3 781.8L262.5 781.5L268.8 781.8L275.0 783.4L281.3 781.4L287.5 779.8L293.8 779.5L300.0 778.3L306.3 776.6L312.5 776.3L318.8 776.5L325.0 776.4L331.3 775.3L337.5 774.4L343.8 773.6L350.0 771.5L356.3 771.7L362.5 771.1L368.8 770.5L375.0 768.5L381.3 767.2L387.5 765.2L393.8 765.4L400.0 764.7L406.3 764.5L412.5 765.6L418.8 765.6L425.0 763.9L431.3 762.2L437.5 762.3L443.8 762.7L450.0 761.9L456.3 761.1L462.5 760.2L468.8 758.6L475.0 758.4L481.3 758.3L487.5 758.4L493.8 758.0L500.0 756.0L506.3 755.8L512.5 754.2L518.8 751.5L525.0 749.8L531.3 749.0L537.5 749.0L543.8 748.3L550.0 747.9L556.3 749.8L562.5 751.9L568.8 753.3L575.0 752.8L581.3 754.7L587.5 755.3L593.8 754.7L600.0 754.6L606.3 755.3L612.5 756.6L618.8 756.6L625.0 756.5L631.3 755.8L637.5 756.1L643.8 756.4L650.0 756.2L656.3 758.0L662.5 759.4L668.8 760.8L675.0 762.3L681.3 765.4L687.5 767.1L693.8 768.2L700.0 770.0L706.3 770.8L712.5 770.2L718.8 770.1L725.0 771.9L731.3 772.2L737.5 771.0L743.8 770.2L750.0 769.1L756.3 768.6L762.5 767.9L768.8 767.7L775.0 768.7L781.3 769.4L787.5 768.9L793.8 768.3L800.0 766.2L800 1000Z"/>
+            <path class="r5" d="M0 1000L0.0 854.5L6.3 854.0L12.5 852.3L18.8 850.1L25.0 848.5L31.3 846.4L37.5 845.1L43.8 843.9L50.0 843.7L56.3 843.4L62.5 843.1L68.8 843.5L75.0 843.7L81.3 842.7L87.5 842.7L93.8 841.4L100.0 839.5L106.3 838.4L112.5 837.1L118.8 837.5L125.0 836.7L131.3 835.7L137.5 835.1L143.8 835.6L150.0 835.7L156.3 836.6L162.5 837.1L168.8 837.9L175.0 839.2L181.3 838.1L187.5 838.4L193.8 838.8L200.0 838.3L206.3 837.6L212.5 836.6L218.8 837.7L225.0 837.6L231.3 836.3L237.5 834.8L243.8 833.7L250.0 832.4L256.3 831.4L262.5 830.8L268.8 829.8L275.0 829.5L281.3 828.7L287.5 829.3L293.8 828.1L300.0 827.3L306.3 827.2L312.5 827.9L318.8 829.2L325.0 829.9L331.3 831.0L337.5 831.8L343.8 833.6L350.0 834.6L356.3 834.2L362.5 834.1L368.8 833.2L375.0 832.5L381.3 833.4L387.5 833.3L393.8 833.7L400.0 834.6L406.3 835.4L412.5 834.8L418.8 836.9L425.0 837.5L431.3 837.4L437.5 838.4L443.8 839.9L450.0 841.0L456.3 842.0L462.5 844.4L468.8 844.2L475.0 845.2L481.3 846.0L487.5 848.2L493.8 849.0L500.0 851.1L506.3 852.4L512.5 854.6L518.8 854.8L525.0 855.8L531.3 857.1L537.5 859.7L543.8 862.5L550.0 864.3L556.3 863.5L562.5 863.7L568.8 865.2L575.0 865.7L581.3 866.2L587.5 867.7L593.8 867.8L600.0 867.0L606.3 867.0L612.5 868.0L618.8 869.7L625.0 870.7L631.3 872.0L637.5 873.6L643.8 874.6L650.0 874.9L656.3 874.4L662.5 873.5L668.8 871.9L675.0 871.6L681.3 872.1L687.5 872.6L693.8 872.3L700.0 873.2L706.3 872.0L712.5 869.8L718.8 868.1L725.0 867.3L731.3 867.1L737.5 867.2L743.8 866.6L750.0 866.4L756.3 866.8L762.5 868.3L768.8 867.9L775.0 868.3L781.3 867.3L787.5 866.2L793.8 864.9L800.0 864.8L800 1000Z"/>
+          </svg>
         </div>
-        <h3>Ascenda</h3>
-        <div class="result">Live on web</div>
-        <p>An AI-powered daily routine and accountability app for university students. You set your goals, Ascenda builds a realistic routine around them with Claude, and your friends on campus keep you honest. The web version is live, and I'm launching it on the AUCA campus first.</p>
-        <div class="meta">
-          <span>AI routine generation · Social accountability · Modular architecture</span>
-          <a href="https://ascenda-omega.vercel.app" target="_blank" rel="noopener">ascenda-omega.vercel.app ↗</a>
-        </div>
-      </article>
+        <ul class="hero-keys" aria-label="Areas of interest">
+          <li>Software</li><li>AI</li><li>Building</li><li>Trading</li><li>Investing</li><li>Education</li><li>Community</li>
+        </ul>
+        <figcaption><span class="label">Plate I — Horizon</span><span class="label">42.87° N · 74.59° E</span></figcaption>
+      </figure>
+    </div>
 
-      <ul class="rows">
-        <li>
-          <div>
-            <span class="cat">Algorithmic trading</span>
-            <h3>XAUUSD trading bot</h3>
-            <p>An automated gold trading system for MetaTrader 5. Version one runs a moving-average crossover with an RSI filter, a dedicated risk-management module, trade logging and a monitoring dashboard. The architecture is modular so machine-learning models can plug in later.</p>
-            <div class="stack">Python · MetaTrader5 bridge · pandas</div>
-          </div>
-          <span class="chip plan">In planning</span>
-        </li>
-        <li>
-          <div>
-            <span class="cat">E-commerce</span>
-            <h3>Kenyan Coffee Co. store</h3>
-            <p>Building a Shopify storefront for a specialty coffee brand as a collaborator through my Shopify Partner account: product catalogue, brand setup and theme work.</p>
-            <div class="result">9 products · 27 variants</div>
-            <div class="stack">Shopify · Liquid · product CSV import</div>
-          </div>
-          <span class="chip client">Client work</span>
-        </li>
-        <li>
-          <div>
-            <span class="cat">Systems</span>
-            <h3>Multithreaded HTTP server in C</h3>
-            <p>A web server built on a producer–consumer model with POSIX threads: one thread accepts connections into a bounded queue, a worker pool serves them.</p>
-            <div class="stack">C · pthreads · sockets</div>
-          </div>
-          <span class="chip done">Systems course</span>
-        </li>
-        <li>
-          <div>
-            <span class="cat">Desktop app</span>
-            <h3>Qt6 text editor</h3>
-            <p>A desktop notepad written in C++ with Qt6: edit and format menus, text transformations, a spell checker and syntax highlighting, built and tested through GitHub Actions CI.</p>
-            <div class="stack">C++ · Qt6 · GitHub Actions</div>
-          </div>
-          <span class="chip done">OOP course</span>
-        </li>
-        <li>
-          <div>
-            <span class="cat">Low-level</span>
-            <h3>ARM assembly series</h3>
-            <p>Nine low-level programs covering arithmetic, condition flags, branching, memory addressing modes and subroutines, written and debugged in Keil µVision.</p>
-            <div class="stack">ARM Assembly · Keil µVision</div>
-          </div>
-          <span class="chip done">Coursework</span>
-        </li>
-        <li>
-          <div>
-            <span class="cat">Content</span>
-            <h3>Footie Lovers</h3>
-            <p>A football YouTube channel: match previews for the 2026 World Cup, league histories and debate-style countdowns like the greatest solo goal ever scored.</p>
-            <div class="stack">Scriptwriting · Video</div>
-          </div>
-          <span class="chip side">Side project</span>
-        </li>
+    <div class="hero-foot reveal">
+      <span class="label ink">A more meaningful tomorrow</span>
+      <a class="label u" href="#building">Eight notes on how I work ↓</a>
+    </div>
+  </section>
+
+  <!-- ================= BUILDING & GROWTH ================= -->
+  <section id="building" class="shell" aria-labelledby="building-title">
+    <div class="section-head">
+      <p class="label ink reveal">Building &amp; Growth</p>
+      <h2 class="display reveal" id="building-title">How I try to <em>work.</em></h2>
+      <p class="intro lede reveal d1">Principles I’m practising, not rules I’ve mastered. Each one comes from something I’ve built, taught, traded, or learned the hard way.</p>
+    </div>
+
+    <!-- 01 -->
+    <article class="chapter" id="problems" aria-labelledby="t-01">
+      <div class="ch-meta reveal"><span class="ch-num">01</span><span class="label ink">Problems</span></div>
+      <div class="ch-body">
+        <h3 class="ch-title display reveal" id="t-01">Start with <em>real</em> problems.</h3>
+        <div class="prose reveal d1">
+          <p>I’m more interested in real problems than ideas.</p>
+          <p>I try to understand what is actually difficult, inefficient, expensive, or frustrating for people — whether in engineering, education, finance, or daily life.</p>
+          <p>The better I understand the problem, the simpler and more powerful the solution usually becomes.</p>
+        </div>
+        <ul class="keys reveal d2" aria-label="Keywords"><li>Curiosity</li><li>Observation</li><li>Research</li><li>First principles</li><li>Real problems</li></ul>
+      </div>
+      <figure class="ch-figure mask">
+        <div class="plate">
+          <svg viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="art-01">
+            <title id="art-01">A notebook page mapping a problem: who has it, why, what it costs, and why now</title>
+            <rect class="a-bg" width="600" height="750"/>
+            <g transform="rotate(-3 300 375)">
+              <rect class="a-sheet" x="92" y="78" width="420" height="590"/>
+              <path class="a-hair" d="M92 170H512M92 198H512M92 226H512M92 254H512M92 282H512M92 310H512M92 338H512M92 366H512M92 394H512M92 422H512M92 450H512M92 478H512M92 506H512M92 534H512M92 562H512M92 590H512M92 618H512M92 646H512"/>
+              <path class="a-accent" d="M140 78V668" opacity=".55"/>
+              <text class="a-text ink" x="158" y="132">Field notes — 01</text>
+              <text class="a-hand" x="158" y="190">what is actually hard here?</text>
+              <path class="a-line" d="M160 202c40 5 90-3 140 2s80 1 110-2"/>
+              <circle class="a-line" cx="326" cy="392" r="50"/>
+              <text class="a-text ink" x="326" y="396" text-anchor="middle">Problem</text>
+              <g class="a-soft"><path d="M290 357 232 304M362 357 420 304M290 427 232 480M362 427 420 480"/></g>
+              <circle class="a-soft" cx="214" cy="288" r="26"/><text class="a-hand" x="214" y="295" text-anchor="middle" font-size="18">who</text>
+              <circle class="a-soft" cx="438" cy="288" r="26"/><text class="a-hand" x="438" y="295" text-anchor="middle" font-size="18">why</text>
+              <circle class="a-soft" cx="214" cy="496" r="26"/><text class="a-hand" x="214" y="503" text-anchor="middle" font-size="18">cost</text>
+              <circle class="a-soft" cx="438" cy="496" r="26"/><text class="a-hand" x="438" y="503" text-anchor="middle" font-size="18">now</text>
+              <text class="a-hand" x="158" y="600">→ the simplest thing that helps</text>
+            </g>
+            <g transform="rotate(-28 470 650)">
+              <path class="a-fill" d="M360 642h210v14H360z"/><path class="a-line" d="M360 642h210v14H360zM570 642l26 7-26 7"/>
+            </g>
+          </svg>
+        </div>
+        <figcaption><span class="label">Fig. 01</span><span class="label">Field notes</span></figcaption>
+      </figure>
+    </article>
+
+    <!-- 02 -->
+    <article class="chapter flip" id="build" aria-labelledby="t-02">
+      <div class="ch-meta reveal"><span class="ch-num">02</span><span class="label ink">Building</span></div>
+      <div class="ch-body">
+        <h3 class="ch-title display reveal" id="t-02">Turn ideas into <em>products.</em></h3>
+        <div class="prose reveal d1">
+          <p>I believe in building before feeling ready.</p>
+          <p>A simple prototype teaches more than months of planning. I enjoy turning ideas into working products — from web and mobile experiences to AI-powered tools — and improving them through iteration.</p>
+          <p class="coda">Build. Test. Learn. <em>Rebuild.</em></p>
+        </div>
+        <ul class="keys reveal d2" aria-label="Keywords"><li>Prototype</li><li>Build</li><li>Test</li><li>Learn</li><li>Iterate</li><li>Ship</li></ul>
+      </div>
+      <figure class="ch-figure mask">
+        <div class="plate">
+          <svg viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="art-02">
+            <title id="art-02">Three versions of an app screen fanned out, from a rough sketch to a finished build</title>
+            <rect class="a-bg" width="600" height="750"/>
+            <g transform="rotate(-9 190 350)"><rect class="a-dash" x="90" y="150" width="200" height="400" rx="26"/><path class="a-dash" d="M120 220h90M120 260h140M120 300h120"/></g>
+            <g transform="rotate(-3 270 340)"><rect class="a-sheet" x="170" y="140" width="200" height="400" rx="26"/><rect class="a-soft" x="170" y="140" width="200" height="400" rx="26"/><path class="a-soft" d="M198 210h100M198 250h144M198 290h144M198 330h110"/></g>
+            <rect class="a-sheet" x="270" y="126" width="210" height="420" rx="28"/>
+            <rect class="a-line" x="270" y="126" width="210" height="420" rx="28"/>
+            <path class="a-line" d="M350 146h50"/>
+            <rect class="a-fill" x="294" y="178" width="162" height="64"/>
+            <text class="a-text ink" x="304" y="204">Today</text>
+            <text class="a-hand" x="304" y="230" font-size="20">a realistic plan</text>
+            <g class="a-line"><rect x="296" y="268" width="14" height="14"/><rect x="296" y="306" width="14" height="14"/><rect x="296" y="344" width="14" height="14"/><rect x="296" y="382" width="14" height="14"/><rect x="296" y="420" width="14" height="14"/></g>
+            <path class="a-line" d="M299 275l4 4 7-9M299 313l4 4 7-9"/>
+            <g class="a-soft"><path d="M324 275h110M324 313h86M324 351h120M324 389h70M324 427h100"/></g>
+            <rect class="a-accent-fill" x="294" y="480" width="162" height="36" rx="18"/>
+            <text class="a-text a-on-accent" x="375" y="502" text-anchor="middle">Ship</text>
+            <text class="a-text" x="160" y="600" text-anchor="middle">v0.1</text>
+            <text class="a-text" x="270" y="600" text-anchor="middle">v0.2</text>
+            <text class="a-text ink" x="375" y="600" text-anchor="middle">v1.0</text>
+            <path class="a-dash" d="M160 620c30 50 180 50 215 0"/>
+            <text class="a-hand" x="300" y="690" text-anchor="middle">build · test · learn · rebuild</text>
+          </svg>
+        </div>
+        <figcaption><span class="label">Fig. 02</span><span class="label">Iterations</span></figcaption>
+      </figure>
+    </article>
+
+    <!-- 03 -->
+    <article class="chapter pull" id="technology" aria-labelledby="t-03">
+      <div class="ch-meta reveal"><span class="ch-num">03</span><span class="label ink">Technology</span></div>
+      <div class="ch-body">
+        <h3 class="ch-title display reveal" id="t-03">Use AI as <em>leverage.</em></h3>
+        <div class="prose reveal d1">
+          <p>I’m fascinated by how much one person can accomplish with the right tools.</p>
+          <p>I use AI to research, code, design, analyze, and automate work. But what interests me most is not simply doing existing work faster.</p>
+          <p>I’m interested in exploring what becomes possible when traditional limitations of time, knowledge, and resources begin to disappear.</p>
+        </div>
+        <ul class="keys reveal d2" aria-label="Keywords"><li>AI</li><li>Automation</li><li>Software</li><li>Leverage</li><li>Creative work</li><li>New possibilities</li></ul>
+      </div>
+      <figure class="ch-figure mask">
+        <div class="plate">
+          <svg viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="art-03">
+            <title id="art-03">A lever diagram: a small effort on the long arm lifts a large block labelled time, knowledge and resources</title>
+            <rect class="a-bg" width="600" height="750"/>
+            <text class="a-hand" x="70" y="140">“Give me a place to stand…”</text>
+            <text class="a-text" x="70" y="168">— Archimedes</text>
+            <path class="a-line" d="M40 560H560"/>
+            <path class="a-hair" d="M60 560l-14 14M90 560l-14 14M120 560l-14 14M150 560l-14 14M180 560l-14 14M210 560l-14 14M240 560l-14 14M270 560l-14 14M300 560l-14 14M330 560l-14 14M360 560l-14 14M390 560l-14 14M420 560l-14 14M450 560l-14 14M480 560l-14 14M510 560l-14 14M540 560l-14 14"/>
+            <path class="a-fill" d="M250 484.5 214 560h72z"/><path class="a-line" d="M250 484.5 214 560h72z"/>
+            <g transform="rotate(12 70 434)">
+              <rect class="a-fill" x="70" y="434" width="480" height="12"/><rect class="a-line" x="70" y="434" width="480" height="12"/>
+              <rect class="a-sheet" x="84" y="270" width="140" height="164"/><rect class="a-line" x="84" y="270" width="140" height="164"/>
+              <text class="a-text ink" x="154" y="332" text-anchor="middle">Time</text>
+              <text class="a-text ink" x="154" y="358" text-anchor="middle">Knowledge</text>
+              <text class="a-text ink" x="154" y="384" text-anchor="middle">Resources</text>
+              <circle class="a-ink" cx="530" cy="416" r="17"/>
+            </g>
+            <path class="a-accent" d="M524 350v118M514 456l10 14 10-14"/>
+            <text class="a-text ink" x="524" y="330" text-anchor="middle">One person</text>
+            <text class="a-text" x="70" y="640">Output = effort × leverage</text>
+          </svg>
+        </div>
+        <figcaption><span class="label">Fig. 03</span><span class="label">Leverage</span></figcaption>
+      </figure>
+    </article>
+
+    <!-- 04 -->
+    <article class="chapter wide" id="learning" aria-labelledby="t-04">
+      <div class="ch-meta reveal"><span class="ch-num">04</span><span class="label ink">Learning</span></div>
+      <figure class="ch-figure mask">
+        <div class="plate">
+          <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="art-04">
+            <title id="art-04">A desk with a stack of books, an open book and a laptop showing code</title>
+            <rect class="a-bg" width="1200" height="600"/>
+            <text class="a-text ink" x="170" y="110">Read</text><text class="a-text" x="226" y="110">→</text>
+            <text class="a-text ink" x="256" y="110">Apply</text><text class="a-text" x="318" y="110">→</text>
+            <text class="a-text ink" x="348" y="110">Teach</text>
+            <path class="a-line" d="M110 470H1100"/>
+            <g>
+              <rect class="a-sheet" x="170" y="420" width="290" height="50"/><rect class="a-line" x="170" y="420" width="290" height="50"/><path class="a-soft" d="M190 420v50M440 420v50"/>
+              <rect class="a-fill" x="190" y="378" width="250" height="42"/><rect class="a-line" x="190" y="378" width="250" height="42"/><path class="a-soft" d="M208 378v42"/>
+              <rect class="a-sheet" x="162" y="342" width="300" height="36"/><rect class="a-line" x="162" y="342" width="300" height="36"/><path class="a-soft" d="M182 342v36M442 342v36"/>
+              <rect class="a-fill" x="206" y="300" width="230" height="42"/><rect class="a-line" x="206" y="300" width="230" height="42"/><path class="a-soft" d="M224 300v42"/>
+              <text class="a-text" x="250" y="325">Meditations</text>
+            </g>
+            <path class="a-sheet" d="M500 452q70-22 140 0V312q-70-22-140 0zM640 452q70-22 140 0V312q-70-22-140 0z"/>
+            <path class="a-line" d="M500 452q70-22 140 0V312q-70-22-140 0zM640 452q70-22 140 0V312q-70-22-140 0z"/>
+            <g class="a-soft"><path d="M522 336q48-12 96 0M522 358q48-12 96 0M522 380q48-12 96 0M522 402q48-12 70 0M662 336q48-12 96 0M662 358q48-12 96 0M662 380q48-12 60 0"/></g>
+            <rect class="a-sheet" x="830" y="232" width="250" height="190"/><rect class="a-line" x="830" y="232" width="250" height="190"/>
+            <path class="a-fill" d="M806 470h298l-20-40H826z"/><path class="a-line" d="M806 470h298l-20-40H826z"/>
+            <g class="a-soft"><path d="M852 264h70M852 284h120M868 304h96M868 324h140M868 344h60M852 364h40M868 384h110"/></g>
+            <rect class="a-accent-fill" x="872" y="396" width="8" height="14"/>
+            <text class="a-hand" x="830" y="530">understanding deepens through practice</text>
+          </svg>
+        </div>
+        <figcaption><span class="label">Fig. 04</span><span class="label">The desk</span></figcaption>
+      </figure>
+      <div class="ch-body">
+        <h3 class="ch-title display reveal" id="t-04">Learn by doing — and <em>teaching.</em></h3>
+        <div class="prose reveal d1">
+          <p>I learn best when I apply what I learn.</p>
+          <p>Studying software engineering, teaching, building projects, and working with people from different backgrounds have taught me how much deeper understanding becomes through practice.</p>
+          <p>Teaching has shaped the way I communicate. Building has shaped the way I solve problems.</p>
+          <p>I try to remain a learner, ask better questions, and share what I learn with others.</p>
+        </div>
+        <ul class="keys reveal d2" aria-label="Keywords"><li>Learn</li><li>Apply</li><li>Teach</li><li>Share</li><li>Question</li><li>Grow together</li></ul>
+      </div>
+    </article>
+
+    <!-- 05 -->
+    <article class="chapter flip" id="markets" aria-labelledby="t-05">
+      <div class="ch-meta reveal"><span class="ch-num">05</span><span class="label ink">Markets</span></div>
+      <div class="ch-body">
+        <h3 class="ch-title display reveal" id="t-05">Trade, invest, and think <em>critically.</em></h3>
+        <div class="prose reveal d1">
+          <p>Markets have taught me lessons that extend far beyond charts.</p>
+          <p>Trading has forced me to think about probability, uncertainty, risk, patience, discipline, and emotional control.</p>
+          <p>I’m interested in global markets — particularly technology-driven markets — not simply for short-term returns, but because they provide a constantly evolving laboratory for decision-making under uncertainty.</p>
+        </div>
+        <ul class="keys reveal d2" aria-label="Keywords"><li>Discipline</li><li>Risk</li><li>Probability</li><li>Patience</li><li>Decision-making</li><li>Long-term thinking</li></ul>
+      </div>
+      <figure class="ch-figure mask">
+        <div class="plate">
+          <svg viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="art-05">
+            <title id="art-05">A price chart with a defined risk level, a target, and a probability curve beside the latest price</title>
+            <rect class="a-bg" width="600" height="750"/>
+            <rect class="a-sheet" x="50" y="100" width="500" height="520"/><rect class="a-line" x="50" y="100" width="500" height="520"/>
+            <text class="a-text ink" x="72" y="136">NDX · XAU</text>
+            <text class="a-text" x="528" y="136" text-anchor="end">Plan before entry</text>
+            <path class="a-hair" d="M50 156H550M60 220H460M60 260H460M60 300H460M60 340H460M60 380H460M60 420H460M60 460H460M60 500H460M60 540H460"/>
+            <path class="a-accent" d="M72 318H460" stroke-dasharray="2 6"/>
+            <text class="a-text ink" x="72" y="308">Target +2R</text>
+            <path class="a-dash" d="M72 490H460"/>
+            <text class="a-text" x="72" y="512">Risk −1R, defined first</text>
+            <g class="candles"><line x1="78" y1="427.6" x2="78" y2="439.7"/><rect class="dn" x="74" y="430" width="8" height="1.5"/><line x1="91" y1="419.8" x2="91" y2="444.9"/><rect class="dn" x="87" y="431.2" width="8" height="11.7"/><line x1="104" y1="421.2" x2="104" y2="455.4"/><rect class="up" x="100" y="427.6" width="8" height="15.3"/><line x1="117" y1="395.3" x2="117" y2="436"/><rect class="up" x="113" y="411.3" width="8" height="16.3"/><line x1="130" y1="393.2" x2="130" y2="416.9"/><rect class="up" x="126" y="402.2" width="8" height="9.1"/><line x1="143" y1="394" x2="143" y2="411.3"/><rect class="dn" x="139" y="402.2" width="8" height="1.5"/><line x1="156" y1="397.4" x2="156" y2="411.1"/><rect class="up" x="152" y="398.2" width="8" height="4.6"/><line x1="169" y1="388.7" x2="169" y2="407.4"/><rect class="dn" x="165" y="398.2" width="8" height="1.5"/><line x1="182" y1="389.2" x2="182" y2="411.7"/><rect class="dn" x="178" y="398.6" width="8" height="10.0"/><line x1="195" y1="392.2" x2="195" y2="416.9"/><rect class="up" x="191" y="400.7" width="8" height="7.9"/><line x1="208" y1="376.3" x2="208" y2="416.5"/><rect class="up" x="204" y="386" width="8" height="14.7"/><line x1="221" y1="360.2" x2="221" y2="395.4"/><rect class="up" x="217" y="371" width="8" height="15.0"/><line x1="234" y1="367" x2="234" y2="391.2"/><rect class="dn" x="230" y="371" width="8" height="16.4"/><line x1="247" y1="369.9" x2="247" y2="399.9"/><rect class="up" x="243" y="375.9" width="8" height="11.5"/><line x1="260" y1="370.5" x2="260" y2="391.2"/><rect class="up" x="256" y="372.6" width="8" height="3.3"/><line x1="273" y1="350.7" x2="273" y2="378.8"/><rect class="up" x="269" y="354.3" width="8" height="18.3"/><line x1="286" y1="352.6" x2="286" y2="379.1"/><rect class="dn" x="282" y="354.3" width="8" height="15.2"/><line x1="299" y1="355.4" x2="299" y2="371.7"/><rect class="up" x="295" y="362.8" width="8" height="6.7"/><line x1="312" y1="352.6" x2="312" y2="370.7"/><rect class="up" x="308" y="357.4" width="8" height="5.4"/><line x1="325" y1="343.3" x2="325" y2="370"/><rect class="dn" x="321" y="357.4" width="8" height="4.6"/><line x1="338" y1="358.9" x2="338" y2="381.1"/><rect class="dn" x="334" y="362" width="8" height="8.6"/><line x1="351" y1="365.3" x2="351" y2="378.6"/><rect class="dn" x="347" y="370.6" width="8" height="4.3"/><line x1="364" y1="371.5" x2="364" y2="379.8"/><rect class="up" x="360" y="372.6" width="8" height="2.3"/><line x1="377" y1="369.2" x2="377" y2="387"/><rect class="dn" x="373" y="372.6" width="8" height="9.1"/><line x1="390" y1="378" x2="390" y2="403.6"/><rect class="dn" x="386" y="381.7" width="8" height="11.7"/><line x1="403" y1="392.7" x2="403" y2="408.3"/><rect class="dn" x="399" y="393.4" width="8" height="1.8"/><line x1="416" y1="394.5" x2="416" y2="413.5"/><rect class="dn" x="412" y="395.2" width="8" height="8.1"/><line x1="429" y1="397.4" x2="429" y2="433.2"/><rect class="dn" x="425" y="403.3" width="8" height="14.4"/></g>
+            <path class="a-hair" d="M470 290V560"/>
+            <path class="a-line" d="M470.1 290L470.1 295L470.2 300L470.3 305L470.4 310L470.6 315L471.0 320L471.5 325L472.2 330L473.2 335L474.6 340L476.3 345L478.5 350L481.3 355L484.7 360L488.7 365L493.2 370L498.2 375L503.5 380L509.0 385L514.5 390L519.6 395L524.1 400L527.8 405L530.4 410L531.8 415L531.9 420L530.6 425L528.1 430L524.5 435L520.0 440L514.9 445L509.5 450L504.0 455L498.6 460L493.6 465L489.0 470L485.0 475L481.6 480L478.7 485L476.5 490L474.7 495L473.3 500L472.3 505L471.6 510L471.0 515L470.7 520L470.4 525L470.3 530L470.2 535L470.1 540L470.1 545L470.0 550L470.0 555L470.0 560"/>
+            <text class="a-text" x="480" y="580">P(x)</text>
+            <text class="a-hand" x="300" y="690" text-anchor="middle">probabilities, not predictions</text>
+          </svg>
+        </div>
+        <figcaption><span class="label">Fig. 05</span><span class="label">Decisions under uncertainty</span></figcaption>
+      </figure>
+    </article>
+
+    <!-- 06 -->
+    <article class="chapter" id="systems" aria-labelledby="t-06">
+      <div class="ch-meta reveal"><span class="ch-num">06</span><span class="label ink">Systems</span></div>
+      <div class="ch-body">
+        <h3 class="ch-title display reveal" id="t-06">Build systems that <em>scale.</em></h3>
+        <div class="prose reveal d1">
+          <p>As ideas and projects grow, systems matter.</p>
+          <p>I think about automation, documentation, repeatable processes, and clear ownership — whether in software, content, finance, education, or collaborative work.</p>
+          <p>Good systems reduce unnecessary complexity and create more room for judgment, creativity, and meaningful work.</p>
+        </div>
+        <ul class="keys reveal d2" aria-label="Keywords"><li>Automation</li><li>Documentation</li><li>Process</li><li>Tools</li><li>Clarity</li><li>Scalability</li></ul>
+      </div>
+      <figure class="ch-figure mask">
+        <div class="plate">
+          <svg viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="art-06">
+            <title id="art-06">A whiteboard diagram of a loop: input, process, owner, documentation, review, then iterate</title>
+            <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="a-ink" d="M0 0 10 5 0 10z"/></marker></defs>
+            <rect class="a-bg" width="600" height="750"/>
+            <rect class="a-sheet" x="40" y="80" width="520" height="540"/><rect class="a-soft" x="40" y="80" width="520" height="540"/>
+            <text class="a-text" x="64" y="116">Loop v3 — keep it boring</text>
+            <g class="a-line">
+              <rect x="80" y="160" width="150" height="58"/><rect x="340" y="160" width="170" height="58"/>
+              <rect x="80" y="340" width="150" height="58"/><rect x="215" y="505" width="170" height="58"/>
+            </g>
+            <rect class="a-accent" x="340" y="340" width="170" height="58"/>
+            <text class="a-text ink" x="155" y="193" text-anchor="middle">Input</text>
+            <text class="a-text ink" x="425" y="193" text-anchor="middle">Process</text>
+            <text class="a-text ink" x="425" y="373" text-anchor="middle">Owner</text>
+            <text class="a-text ink" x="155" y="373" text-anchor="middle">Docs</text>
+            <text class="a-text ink" x="300" y="538" text-anchor="middle">Review</text>
+            <g class="a-line" marker-end="url(#arr)"><path d="M232 189H336"/><path d="M425 220V336"/><path d="M338 369H234"/><path d="M160 400 250 501"/></g>
+            <path class="a-dash" d="M213 534C70 540 30 300 76 222" marker-end="url(#arr)"/>
+            <text class="a-hand" x="70" y="470">iterate</text>
+            <text class="a-hand" x="360" y="280" font-size="18">automate?</text>
+            <rect class="a-fill" x="30" y="620" width="540" height="12"/><rect class="a-line" x="30" y="620" width="540" height="12"/>
+            <rect class="a-ink" x="390" y="604" width="110" height="14" rx="7"/>
+          </svg>
+        </div>
+        <figcaption><span class="label">Fig. 06</span><span class="label">Whiteboard</span></figcaption>
+      </figure>
+    </article>
+
+    <!-- 07 -->
+    <article class="chapter flip" id="people" aria-labelledby="t-07">
+      <div class="ch-meta reveal"><span class="ch-num">07</span><span class="label ink">People</span></div>
+      <div class="ch-body">
+        <h3 class="ch-title display reveal" id="t-07">Build with and for <em>people.</em></h3>
+        <div class="prose reveal d1">
+          <p>My perspective has been shaped by different communities, cultures, classrooms, teams, and international experiences.</p>
+          <p>From Afghanistan to Kyrgyzstan and through international programs, I’ve learned to value meaningful conversations, cultural exchange, mentorship, and collaboration.</p>
+          <p>Technology matters most when it ultimately improves something for people.</p>
+        </div>
+        <ul class="keys reveal d2" aria-label="Keywords"><li>Community</li><li>Collaboration</li><li>Mentorship</li><li>Cultural exchange</li><li>Leadership</li><li>Impact</li></ul>
+      </div>
+      <figure class="ch-figure mask">
+        <div class="plate">
+          <svg viewBox="0 0 600 750" preserveAspectRatio="xMidYMid slice" role="img" aria-labelledby="art-07">
+            <title id="art-07">A contour map with a dashed route from Afghanistan to Bishkek, each surrounded by a small network of people</title>
+            <rect class="a-bg" width="600" height="750"/>
+            <path class="a-soft" d="M430.4 248.0L430.3 252.0L429.6 255.8L428.2 259.5L426.1 262.7L423.5 265.3L420.7 267.4L417.8 269.2L415.1 271.0L412.3 272.8L409.5 274.7L406.4 276.4L403.0 277.5L399.4 277.7L396.0 276.8L392.9 274.9L390.2 272.4L387.9 269.6L385.9 266.9L383.8 264.2L381.7 261.5L379.7 258.6L377.9 255.4L376.7 251.8L376.2 248.0L376.3 244.1L376.9 240.3L377.9 236.6L379.2 232.9L380.9 229.4L383.1 226.1L385.8 223.4L389.1 221.5L392.7 220.7L396.4 220.9L399.9 221.7L403.0 222.8L405.9 223.6L408.8 224.2L411.9 224.5L415.2 224.8L418.6 225.7L421.8 227.3L424.6 229.8L426.8 232.9L428.4 236.4L429.4 240.2L430.1 244.1L430.4 248.0Z"/><path class="a-hair" d="M460.2 246.0L459.7 253.8L457.7 261.2L454.4 268.0L450.3 274.1L445.9 279.7L441.5 285.1L437.1 290.6L432.3 296.1L426.8 301.1L420.3 304.9L413.3 306.6L406.0 306.1L399.1 303.5L392.9 299.6L387.5 295.1L382.5 290.7L377.6 286.7L372.5 282.8L367.4 278.6L362.5 273.6L358.4 267.7L355.4 260.9L353.5 253.6L352.4 246.0L352.1 238.2L352.5 230.2L353.7 222.2L356.1 214.3L360.1 207.3L365.6 201.6L372.4 197.9L379.8 196.0L387.1 195.7L393.8 196.0L400.0 196.2L406.0 195.8L412.1 195.0L418.6 194.3L425.4 194.5L432.2 196.2L438.4 199.6L443.7 204.5L448.1 210.5L451.7 217.0L454.8 223.8L457.4 230.9L459.3 238.3L460.2 246.0Z"/><path class="a-hair" d="M487.0 244.0L490.4 255.8L492.0 268.5L490.8 281.3L486.2 293.0L478.6 302.7L468.8 309.8L458.1 314.4L447.5 317.3L437.4 319.5L427.9 321.5L418.5 323.4L409.0 324.6L399.4 324.5L389.8 322.7L380.7 319.2L372.1 314.4L363.8 308.8L355.7 302.7L347.6 295.9L339.8 288.0L333.0 278.6L328.3 267.8L326.3 256.0L327.2 244.0L330.4 232.6L335.0 222.2L340.0 212.6L344.6 203.1L349.1 193.4L353.9 183.4L359.9 173.7L367.7 165.2L377.0 159.1L387.5 155.9L398.4 155.5L409.0 157.2L419.0 160.2L428.5 163.9L437.6 168.0L446.3 172.9L454.4 178.9L461.4 186.3L467.2 194.9L471.7 204.2L475.4 213.7L479.0 223.4L483.0 233.3L487.0 244.0Z"/><path class="a-soft" d="M510.1 242.0L507.8 255.9L506.1 269.7L504.5 284.2L501.8 299.0L496.8 313.6L488.8 326.4L477.9 336.4L465.1 343.1L451.4 346.7L437.9 348.4L424.8 349.1L412.0 349.7L399.1 349.8L386.0 348.8L372.9 345.9L360.4 340.4L348.9 332.5L338.6 322.8L329.2 311.9L320.3 300.2L311.8 287.6L304.2 273.8L298.5 258.4L296.0 242.0L297.8 225.5L304.0 210.2L313.6 197.1L325.0 186.7L336.6 178.4L347.3 170.8L356.9 163.0L366.0 154.4L375.6 145.4L386.5 137.2L398.7 130.9L412.0 127.5L425.7 127.1L439.5 129.2L453.0 133.2L466.3 138.6L479.2 145.7L491.3 154.8L501.5 166.4L509.0 180.4L513.2 195.9L514.0 211.9L512.5 227.4L510.1 242.0Z"/><path class="a-hair" d="M548.0 240.0L551.0 259.7L550.8 280.0L546.0 299.7L536.2 317.0L522.4 330.7L506.2 340.3L489.5 346.9L473.7 351.8L459.0 356.8L444.9 362.6L430.4 368.7L415.0 374.0L398.6 377.0L381.7 376.6L365.0 372.8L348.8 366.1L333.3 357.1L318.3 346.3L304.1 333.6L291.3 318.6L281.4 300.9L275.8 281.0L275.3 260.2L279.7 240.0L287.7 221.6L297.2 205.3L306.5 190.6L314.5 176.2L321.6 161.2L329.0 145.4L338.1 129.7L349.8 115.8L364.3 105.3L380.6 98.9L397.8 96.5L415.0 97.1L431.8 99.5L448.4 103.0L464.8 107.8L480.8 114.6L495.8 124.2L508.8 136.8L519.2 152.0L527.1 168.8L533.1 186.2L538.3 203.7L543.4 221.4L548.0 240.0Z"/><path class="a-hair" d="M568.3 238.0L570.4 260.1L570.4 282.9L566.8 305.8L558.3 327.1L545.0 345.2L528.0 359.0L509.4 369.0L490.7 376.5L472.8 383.6L455.4 391.6L437.5 400.7L418.0 409.3L396.8 415.1L374.6 416.1L352.9 410.9L333.0 399.9L315.8 384.5L301.3 366.4L289.0 346.8L278.8 326.4L270.8 305.1L265.9 282.8L264.8 260.2L267.9 238.0L274.6 217.2L283.4 198.3L292.3 180.7L300.2 163.2L307.0 144.3L314.0 123.6L323.1 102.0L335.8 81.5L352.8 64.9L373.3 54.4L395.6 50.7L418.0 53.2L439.3 59.9L459.2 68.8L478.0 78.7L496.0 89.4L513.1 101.7L528.5 116.4L541.4 133.9L551.0 153.5L557.6 174.4L562.0 195.6L565.3 216.7L568.3 238.0Z"/><path class="a-soft" d="M621.1 236.0L618.9 264.7L610.4 291.8L597.5 316.4L582.1 338.3L565.5 358.0L548.0 375.7L529.2 391.1L508.8 403.3L487.0 411.3L464.6 414.9L442.4 415.2L421.0 413.8L399.8 412.8L377.9 413.0L354.2 413.5L328.6 412.1L302.4 406.0L278.1 393.2L258.3 373.3L244.8 347.9L238.0 319.4L236.6 290.4L238.4 262.4L241.5 236.0L245.1 210.5L249.6 185.5L256.2 160.9L266.1 137.6L279.6 116.7L296.2 98.8L314.7 83.7L334.1 70.5L354.1 58.3L374.9 46.7L397.2 36.8L421.0 30.6L445.7 30.0L469.6 36.4L491.4 49.1L510.1 66.2L526.2 85.2L541.1 103.9L556.3 121.8L572.7 139.6L589.7 159.2L605.0 181.8L616.2 207.7L621.1 236.0Z"/><path class="a-hair" d="M202.3 558.0L203.6 562.4L204.0 567.2L203.4 571.9L201.7 576.2L199.1 580.0L195.9 583.2L192.3 585.7L188.7 587.8L184.8 589.5L180.9 590.5L176.9 590.8L173.0 590.3L169.3 588.9L165.9 587.0L162.8 585.0L159.8 583.1L156.7 581.4L153.3 579.7L149.7 577.7L146.2 575.0L143.4 571.5L141.5 567.3L140.9 562.7L141.3 558.0L142.4 553.6L144.0 549.4L145.6 545.5L147.3 541.7L149.2 537.9L151.5 534.4L154.4 531.3L157.7 528.9L161.4 527.3L165.3 526.3L169.1 525.7L173.0 525.4L176.9 525.3L180.9 525.6L184.8 526.7L188.4 528.6L191.5 531.5L193.8 535.1L195.4 539.1L196.6 543.0L197.7 546.8L199.0 550.3L200.6 554.0L202.3 558.0Z"/><path class="a-hair" d="M237.6 556.0L235.9 564.7L234.0 573.1L231.7 581.4L228.6 589.4L224.4 596.9L219.0 603.4L212.7 608.6L205.7 612.6L198.5 615.6L191.2 618.2L183.7 620.5L176.0 622.4L168.0 623.1L159.9 622.1L152.3 619.0L145.7 613.8L140.4 607.0L136.4 599.6L133.0 592.3L129.6 585.5L125.7 578.9L121.4 572.1L117.2 564.5L113.9 556.0L112.3 546.8L112.9 537.4L115.5 528.4L119.7 520.3L125.1 513.0L131.1 506.6L137.6 500.9L144.7 496.3L152.3 493.1L160.4 491.8L168.4 492.3L176.0 494.4L183.0 497.4L189.5 500.4L196.0 502.9L202.8 504.8L210.3 506.8L218.1 509.7L225.5 514.2L231.8 520.6L236.1 528.6L238.2 537.7L238.5 546.9L237.6 556.0Z"/><path class="a-soft" d="M258.4 554.0L258.4 565.5L258.2 577.4L257.1 589.6L254.1 601.7L249.1 613.2L242.4 623.7L234.3 633.2L225.2 642.0L215.2 650.1L204.1 657.1L191.9 662.1L179.0 664.2L166.0 662.4L153.9 656.8L143.5 648.2L134.9 638.0L127.7 627.5L121.0 617.8L114.0 608.9L106.5 600.1L99.0 590.5L92.6 579.5L88.3 567.1L87.0 554.0L88.5 540.9L92.2 528.4L97.2 516.7L102.9 505.7L109.1 495.0L116.0 484.8L124.1 475.4L133.6 467.6L144.3 462.0L155.8 458.7L167.4 457.2L179.0 456.8L190.6 456.8L202.6 457.0L215.1 458.2L227.7 461.3L239.4 467.4L249.2 476.8L256.1 488.9L259.7 502.8L260.6 516.8L259.9 530.1L258.9 542.4L258.4 554.0Z"/><path class="a-hair" d="M307.1 552.0L309.8 570.5L310.1 589.7L306.6 608.8L298.8 626.2L286.6 640.3L271.4 650.3L254.8 656.4L238.5 659.7L223.5 662.2L209.6 665.2L196.0 669.3L182.0 673.7L167.1 676.9L151.5 677.3L136.0 674.1L121.6 667.1L108.6 657.2L97.0 645.5L86.4 632.7L76.6 618.9L68.0 603.9L61.4 587.6L57.7 570.0L57.7 552.0L61.2 534.5L67.2 518.2L74.4 503.0L81.8 488.4L89.2 473.6L96.9 458.4L106.3 443.4L118.0 430.1L132.4 420.2L148.7 415.3L165.7 415.5L182.0 420.0L197.0 426.9L210.6 434.5L223.5 441.7L236.3 448.4L249.3 455.5L261.9 464.1L273.6 474.7L283.5 487.5L291.5 502.1L297.8 517.9L302.9 534.5L307.1 552.0Z"/><path class="a-hair" d="M337.3 550.0L333.5 571.5L328.1 592.2L321.5 612.2L313.4 631.5L303.0 649.6L289.9 665.4L274.1 677.8L256.6 686.4L238.4 691.7L220.4 695.5L202.9 699.4L185.0 704.4L165.8 710.1L144.9 714.5L122.8 715.3L100.9 710.3L81.3 698.6L65.8 681.1L55.0 659.7L48.4 636.7L44.8 613.9L42.8 591.9L41.8 570.7L41.9 550.0L44.1 529.6L48.8 509.9L56.3 491.3L65.8 474.3L76.4 458.4L87.4 442.7L98.8 426.4L111.3 409.6L126.0 393.3L143.5 379.7L163.6 371.2L185.0 369.3L206.0 374.1L225.4 384.2L242.5 397.3L257.9 411.0L272.7 424.3L287.6 437.1L302.5 450.8L316.5 466.5L327.8 484.9L335.3 505.7L338.2 527.8L337.3 550.0Z"/>
+            <path class="a-dash" d="M170 560Q210 330 410 250"/>
+            <g class="a-soft"><path d="M410 250 468 176M410 250 500 300M410 250 344 168M410 250 462 362M410 250 322 318M468 176 344 168M500 300 462 362M170 560 110 500M170 560 236 620M170 560 96 612M110 500 96 612"/></g>
+            <g class="a-sheet"><circle cx="468" cy="176" r="6"/><circle cx="500" cy="300" r="6"/><circle cx="344" cy="168" r="6"/><circle cx="462" cy="362" r="6"/><circle cx="322" cy="318" r="6"/><circle cx="110" cy="500" r="6"/><circle cx="236" cy="620" r="6"/><circle cx="96" cy="612" r="6"/></g>
+            <g class="a-line"><circle cx="468" cy="176" r="6"/><circle cx="500" cy="300" r="6"/><circle cx="344" cy="168" r="6"/><circle cx="462" cy="362" r="6"/><circle cx="322" cy="318" r="6"/><circle cx="110" cy="500" r="6"/><circle cx="236" cy="620" r="6"/><circle cx="96" cy="612" r="6"/></g>
+            <circle class="a-accent" cx="410" cy="250" r="15"/><circle class="a-accent-fill" cx="410" cy="250" r="6"/>
+            <circle class="a-ink" cx="170" cy="560" r="6"/>
+            <text class="a-text ink" x="432" y="236">Bishkek, KG</text>
+            <text class="a-text" x="432" y="254">42.87° N · 74.59° E</text>
+            <text class="a-text ink" x="190" y="552">Afghanistan</text>
+            <text class="a-hand" x="300" y="700" text-anchor="middle">people, places, conversations</text>
+          </svg>
+        </div>
+        <figcaption><span class="label">Fig. 07</span><span class="label">Route</span></figcaption>
+      </figure>
+    </article>
+
+    <!-- 08 -->
+    <article class="chapter wide" id="long-term" aria-labelledby="t-08">
+      <div class="ch-meta reveal"><span class="ch-num">08</span><span class="label ink">Long term</span></div>
+      <figure class="ch-figure mask">
+        <div class="plate">
+          <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMax slice" role="img" aria-labelledby="art-08">
+            <title id="art-08">A wide mountain horizon with a compounding curve rising out of the ridges over three decades</title>
+            <defs><linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="a-sky-top"/><stop offset=".7" class="a-sky-low"/></linearGradient></defs>
+            <rect width="1200" height="600" fill="url(#sky2)"/>
+            <g class="a-hair"><path d="M420 60V520M780 60V520M1140 60V520" stroke-dasharray="2 6"/></g>
+            <text class="a-text" x="60" y="52">Year 0</text>
+            <text class="a-text" x="420" y="52" text-anchor="middle">10</text>
+            <text class="a-text" x="780" y="52" text-anchor="middle">20</text>
+            <text class="a-text ink" x="1140" y="52" text-anchor="end">30 →</text>
+            <path class="r1" d="M0 600L0.0 345.1L9.4 341.4L18.8 337.9L28.1 337.5L37.5 336.3L46.9 335.1L56.3 333.3L65.6 333.9L75.0 331.7L84.4 334.2L93.8 333.0L103.1 331.7L112.5 332.5L121.9 330.4L131.3 328.4L140.6 327.1L150.0 322.9L159.4 323.8L168.8 322.1L178.1 324.1L187.5 326.0L196.9 327.9L206.3 329.5L215.6 327.1L225.0 328.6L234.4 327.4L243.8 323.7L253.1 319.4L262.5 318.0L271.9 319.1L281.3 317.9L290.6 316.9L300.0 318.0L309.4 321.9L318.8 322.8L328.1 323.7L337.5 322.0L346.9 319.8L356.3 319.1L365.6 321.7L375.0 322.5L384.4 324.7L393.8 328.1L403.1 327.0L412.5 326.8L421.9 323.6L431.3 323.3L440.6 320.4L450.0 319.1L459.4 317.5L468.8 317.5L478.1 318.3L487.5 321.0L496.9 317.3L506.3 313.4L515.6 313.0L525.0 312.2L534.4 309.8L543.8 310.4L553.1 311.5L562.5 309.9L571.9 308.4L581.3 309.1L590.6 309.8L600.0 313.8L609.4 316.8L618.8 320.9L628.1 324.3L637.5 328.4L646.9 333.9L656.3 336.2L665.6 339.5L675.0 340.3L684.4 339.9L693.8 341.4L703.1 340.9L712.5 338.2L721.9 341.9L731.3 343.6L740.6 346.1L750.0 345.8L759.4 350.0L768.8 352.4L778.1 356.4L787.5 358.4L796.9 359.5L806.3 361.9L815.6 364.9L825.0 366.2L834.4 367.6L843.8 371.6L853.1 376.1L862.5 378.1L871.9 382.2L881.3 387.2L890.6 389.0L900.0 389.4L909.4 388.4L918.8 388.6L928.1 389.5L937.5 392.8L946.9 393.5L956.3 395.6L965.6 396.8L975.0 397.2L984.4 400.3L993.8 399.8L1003.1 404.1L1012.5 406.7L1021.9 409.1L1031.3 412.3L1040.6 415.3L1050.0 415.0L1059.4 413.6L1068.8 414.7L1078.1 414.3L1087.5 415.5L1096.9 414.3L1106.3 413.3L1115.6 415.3L1125.0 415.8L1134.4 414.0L1143.8 414.1L1153.1 413.4L1162.5 409.4L1171.9 408.1L1181.3 403.1L1190.6 401.8L1200.0 399.3L1200 600Z"/>
+            <path class="a-line" d="M60.0 470.0L78.0 469.1L96.0 468.1L114.0 467.1L132.0 466.1L150.0 464.9L168.0 463.7L186.0 462.5L204.0 461.2L222.0 459.8L240.0 458.3L258.0 456.8L276.0 455.1L294.0 453.4L312.0 451.6L330.0 449.7L348.0 447.7L366.0 445.5L384.0 443.3L402.0 440.9L420.0 438.4L438.0 435.8L456.0 433.0L474.0 430.1L492.0 427.0L510.0 423.7L528.0 420.3L546.0 416.6L564.0 412.8L582.0 408.8L600.0 404.5L618.0 400.0L636.0 395.2L654.0 390.2L672.0 385.0L690.0 379.4L708.0 373.5L726.0 367.3L744.0 360.8L762.0 353.9L780.0 346.6L798.0 339.0L816.0 330.9L834.0 322.4L852.0 313.4L870.0 303.9L888.0 293.9L906.0 283.3L924.0 272.2L942.0 260.4L960.0 248.1L978.0 235.0L996.0 221.2L1014.0 206.7L1032.0 191.3L1050.0 175.2L1068.0 158.1L1086.0 140.1L1104.0 121.1L1122.0 101.1L1140.0 80.0"/>
+            <path class="r2" d="M0 600L0.0 383.9L9.4 383.6L18.8 383.0L28.1 380.7L37.5 380.4L46.9 381.8L56.3 385.8L65.6 387.6L75.0 386.4L84.4 387.5L93.8 389.1L103.1 393.1L112.5 397.7L121.9 400.0L131.3 401.0L140.6 403.2L150.0 403.6L159.4 402.6L168.8 399.7L178.1 398.4L187.5 398.1L196.9 400.3L206.3 399.8L215.6 400.4L225.0 397.7L234.4 396.7L243.8 398.7L253.1 397.8L262.5 398.6L271.9 397.9L281.3 397.1L290.6 398.0L300.0 397.4L309.4 396.5L318.8 395.1L328.1 394.8L337.5 391.9L346.9 391.3L356.3 387.8L365.6 384.2L375.0 378.7L384.4 373.9L393.8 371.4L403.1 372.0L412.5 369.3L421.9 365.0L431.3 362.2L440.6 361.0L450.0 359.1L459.4 357.6L468.8 353.3L478.1 352.1L487.5 350.1L496.9 347.3L506.3 346.4L515.6 345.4L525.0 346.8L534.4 347.0L543.8 348.5L553.1 349.4L562.5 348.2L571.9 350.5L581.3 350.2L590.6 352.3L600.0 352.6L609.4 357.3L618.8 359.3L628.1 358.9L637.5 360.4L646.9 361.7L656.3 361.7L665.6 364.4L675.0 366.7L684.4 370.5L693.8 377.5L703.1 379.3L712.5 384.0L721.9 385.4L731.3 389.1L740.6 391.2L750.0 392.7L759.4 393.5L768.8 396.5L778.1 397.1L787.5 399.6L796.9 400.6L806.3 402.8L815.6 403.7L825.0 403.4L834.4 403.1L843.8 403.3L853.1 404.7L862.5 406.9L871.9 408.3L881.3 411.3L890.6 409.9L900.0 410.2L909.4 414.4L918.8 417.1L928.1 420.0L937.5 421.8L946.9 424.1L956.3 427.7L965.6 426.7L975.0 428.9L984.4 428.8L993.8 429.7L1003.1 427.9L1012.5 427.3L1021.9 427.2L1031.3 426.3L1040.6 427.8L1050.0 430.1L1059.4 430.8L1068.8 432.9L1078.1 434.5L1087.5 436.6L1096.9 438.8L1106.3 437.9L1115.6 436.2L1125.0 434.7L1134.4 436.0L1143.8 437.2L1153.1 438.1L1162.5 438.2L1171.9 437.9L1181.3 436.3L1190.6 435.3L1200.0 435.3L1200 600Z"/>
+            <path class="r3" d="M0 600L0.0 457.1L9.4 457.4L18.8 456.0L28.1 454.9L37.5 453.4L46.9 454.2L56.3 455.7L65.6 456.4L75.0 456.6L84.4 458.6L93.8 460.2L103.1 461.0L112.5 460.1L121.9 462.7L131.3 464.8L140.6 466.7L150.0 467.9L159.4 466.0L168.8 464.9L178.1 465.2L187.5 464.2L196.9 463.2L206.3 461.0L215.6 461.1L225.0 459.7L234.4 458.6L243.8 457.6L253.1 456.4L262.5 454.5L271.9 454.0L281.3 453.2L290.6 452.6L300.0 452.2L309.4 453.9L318.8 454.7L328.1 455.3L337.5 454.8L346.9 455.7L356.3 455.3L365.6 456.3L375.0 456.7L384.4 458.8L393.8 460.6L403.1 462.9L412.5 464.9L421.9 466.6L431.3 466.6L440.6 467.4L450.0 468.0L459.4 468.9L468.8 468.8L478.1 467.3L487.5 465.8L496.9 467.0L506.3 469.7L515.6 470.9L525.0 470.7L534.4 472.0L543.8 471.8L553.1 472.2L562.5 474.4L571.9 475.7L581.3 475.7L590.6 477.8L600.0 478.6L609.4 477.4L618.8 476.3L628.1 477.5L637.5 476.8L646.9 475.1L656.3 472.1L665.6 471.4L675.0 470.5L684.4 470.0L693.8 471.3L703.1 470.9L712.5 468.9L721.9 468.0L731.3 466.1L740.6 464.2L750.0 461.7L759.4 463.3L768.8 464.3L778.1 465.8L787.5 467.5L796.9 467.6L806.3 467.9L815.6 468.3L825.0 470.3L834.4 469.4L843.8 469.9L853.1 468.4L862.5 468.3L871.9 469.9L881.3 471.4L890.6 472.1L900.0 471.7L909.4 472.1L918.8 473.3L928.1 474.7L937.5 476.1L946.9 478.4L956.3 481.2L965.6 483.8L975.0 485.8L984.4 485.2L993.8 484.8L1003.1 485.1L1012.5 486.0L1021.9 486.1L1031.3 487.5L1040.6 489.1L1050.0 491.1L1059.4 491.5L1068.8 493.7L1078.1 493.3L1087.5 494.9L1096.9 494.3L1106.3 494.4L1115.6 494.9L1125.0 493.8L1134.4 494.5L1143.8 494.1L1153.1 492.4L1162.5 492.2L1171.9 492.6L1181.3 492.5L1190.6 494.0L1200.0 495.2L1200 600Z"/>
+            <path class="r5" d="M0 600L0.0 539.3L9.4 540.0L18.8 540.6L28.1 540.6L37.5 540.0L46.9 539.7L56.3 539.0L65.6 538.6L75.0 539.0L84.4 539.3L93.8 539.5L103.1 538.7L112.5 538.3L121.9 537.9L131.3 537.2L140.6 536.2L150.0 535.0L159.4 535.2L168.8 536.0L178.1 536.4L187.5 537.4L196.9 537.9L206.3 538.0L215.6 538.3L225.0 538.0L234.4 538.1L243.8 537.6L253.1 538.2L262.5 538.7L271.9 538.9L281.3 539.6L290.6 539.1L300.0 539.1L309.4 539.2L318.8 540.2L328.1 540.1L337.5 539.3L346.9 539.7L356.3 540.6L365.6 540.0L375.0 539.8L384.4 540.1L393.8 540.2L403.1 539.8L412.5 538.9L421.9 536.9L431.3 535.8L440.6 535.1L450.0 534.0L459.4 535.0L468.8 536.1L478.1 536.3L487.5 536.4L496.9 535.4L506.3 535.4L515.6 535.4L525.0 536.0L534.4 535.8L543.8 536.1L553.1 535.9L562.5 536.3L571.9 536.6L581.3 537.1L590.6 538.7L600.0 539.9L609.4 539.4L618.8 537.9L628.1 537.9L637.5 537.3L646.9 537.2L656.3 537.5L665.6 537.5L675.0 537.0L684.4 536.2L693.8 536.1L703.1 535.6L712.5 536.1L721.9 535.5L731.3 534.4L740.6 534.8L750.0 534.5L759.4 534.2L768.8 533.7L778.1 533.3L787.5 532.9L796.9 533.2L806.3 532.6L815.6 532.7L825.0 531.9L834.4 532.3L843.8 533.0L853.1 534.3L862.5 535.9L871.9 535.2L881.3 535.6L890.6 536.2L900.0 536.6L909.4 535.8L918.8 534.0L928.1 533.3L937.5 533.1L946.9 532.1L956.3 532.2L965.6 532.2L975.0 532.6L984.4 533.2L993.8 533.6L1003.1 535.2L1012.5 536.0L1021.9 536.6L1031.3 537.1L1040.6 537.2L1050.0 536.3L1059.4 538.0L1068.8 538.9L1078.1 539.7L1087.5 540.8L1096.9 542.3L1106.3 543.2L1115.6 545.0L1125.0 547.2L1134.4 548.8L1143.8 550.2L1153.1 551.3L1162.5 551.8L1171.9 552.1L1181.3 552.8L1190.6 552.9L1200.0 552.5L1200 600Z"/>
+          </svg>
+        </div>
+        <figcaption><span class="label">Fig. 08</span><span class="label">Compounding</span></figcaption>
+      </figure>
+      <div class="ch-body">
+        <h3 class="ch-title display reveal" id="t-08">Think in <em>decades.</em></h3>
+        <div class="prose reveal d1">
+          <p>I’m interested in building things that compound.</p>
+          <p class="coda">Knowledge compounds.<br>Skills compound.<br>Relationships compound.<br>Reputation compounds.<br><em>Capital compounds.</em></p>
+          <p>My goal isn’t simply short-term success. I want to become capable of building things that create long-term value — for myself, my family, my community, and eventually the places that shaped me.</p>
+        </div>
+        <ul class="keys reveal d2" aria-label="Keywords"><li>Compound</li><li>Perspective</li><li>Meaningful work</li><li>Freedom</li><li>Contribute</li><li>Long term</li></ul>
+      </div>
+    </article>
+  </section>
+
+  <!-- ================= CLOSING + CONTACT ================= -->
+  <section class="closing" id="contact" aria-labelledby="q-label">
+    <div class="shell">
+      <h2 class="label reveal" id="q-label">The question I keep coming back to:</h2>
+      <blockquote class="reveal d1"><span class="q-mark" aria-hidden="true">“</span>What can I build today that makes tomorrow <em>bigger, more meaningful,</em> and more useful for the people around me?”</blockquote>
+      <div class="contact-grid">
+        <p class="reveal">I’m always interested in meeting people who are building, learning, investing, and working on ambitious things — especially in software, AI, markets, education, and ideas that create real impact.</p>
+        <div class="contact-cta reveal d1">
+          <a class="cta-big" data-email href="mailto:Saifullah.nazar123@gmail.com">Let’s connect <span class="arr" aria-hidden="true">↗</span></a>
+          <a class="mail" data-email data-email-text href="mailto:Saifullah.nazar123@gmail.com">Saifullah.nazar123@gmail.com</a>
+          <button class="copy-btn" type="button" data-copy>Copy email</button>
+          <span class="sr-only" role="status" data-copy-status></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="shell">
+    <div class="foot-id">
+      <a class="brand" href="index.html">Saifullah Nazari.</a>
+      <span class="label">Software engineer · Builder · Trader · Investor · Educator</span>
+      <a class="label ink u" data-email href="mailto:Saifullah.nazar123@gmail.com">Saifullah.nazar123@gmail.com</a>
+    </div>
+    <div class="foot-motto">
+      <q>A more meaningful tomorrow.</q>
+      <ul class="social" data-social aria-label="Elsewhere">
+        <li><a class="u" href="https://github.com/Saifullah-12art" rel="me noopener" target="_blank">GitHub ↗</a></li>
       </ul>
     </div>
-  </section>
-
-  <section class="block" id="skills">
-    <div class="side">
-      <div class="label">Skills</div>
-      <h2>What I work with</h2>
-    </div>
-    <div class="skills">
-      <div class="skill-col c1">
-        <h3 class="label">Languages</h3>
-        <ul>
-          <li>C++ (OOP, Qt6)</li>
-          <li>Python</li>
-          <li>C</li>
-          <li>ARM Assembly</li>
-          <li>JavaScript, HTML, CSS</li>
-        </ul>
-      </div>
-      <div class="skill-col c2">
-        <h3 class="label">Tools</h3>
-        <ul>
-          <li>Git &amp; GitHub Actions</li>
-          <li>Claude Code &amp; MCP</li>
-          <li>Claude API</li>
-          <li>Vercel</li>
-          <li>Shopify</li>
-        </ul>
-      </div>
-      <div class="skill-col c3">
-        <h3 class="label">Interests</h3>
-        <ul>
-          <li>AI products</li>
-          <li>Machine learning</li>
-          <li>Cloud (AWS)</li>
-          <li>Algorithmic trading</li>
-          <li>Systems programming</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="roadmap">
-    <div class="side">
-      <div class="label">May 2026 → May 2027</div>
-      <h2>My 52-week roadmap</h2>
-    </div>
-    <div>
-      <p class="intro">I'm following a year-long plan that pairs certifications with about 20 hours a week of real product work on Ascenda.</p>
-      <ol class="road">
-        <li class="done">
-          <span class="when label">Completed · April 2026</span>
-          <strong>Claude Code in Action</strong>
-          <p>Agentic coding workflows, custom commands and MCP servers.</p>
-        </li>
-        <li class="now">
-          <span class="when label">In progress</span>
-          <strong>IBM Full Stack Software Developer</strong>
-          <p>Professional certificate on Coursera: front end, back end, cloud and DevOps.</p>
-        </li>
-        <li>
-          <span class="when label">Next</span>
-          <strong>AWS Cloud Practitioner → Developer Associate</strong>
-          <p>Cloud foundations, then building and deploying on AWS.</p>
-        </li>
-        <li>
-          <span class="when label">Then</span>
-          <strong>DeepLearning.AI ML Specialization &amp; TensorFlow Developer</strong>
-          <p>The maths and practice of machine learning.</p>
-        </li>
-        <li>
-          <span class="when label">Capstone</span>
-          <strong>AWS Machine Learning Specialty</strong>
-          <p>Putting ML into production on the cloud.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="block" id="thinking">
-    <div class="side">
-      <div class="label">Off the keyboard</div>
-      <h2>How I think</h2>
-    </div>
-    <div>
-      <blockquote>You have power over your mind, not outside events.</blockquote>
-      <cite class="label">Marcus Aurelius, <i>Meditations</i></cite>
-      <div class="prose">
-        <p>I think of myself as a Stoic. Most of what I build comes back to one question: how do you keep showing up on the days you don't feel like it? Outside of code I read philosophy and the history and literature of Central Asia, and I'm learning Russian.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="reading">
-    <div class="side">
-      <div class="label">The shelf</div>
-      <h2>What I'm reading</h2>
-    </div>
-    <div>
-      <div class="shelf">
-        <div><b>Meditations</b><span>Marcus Aurelius</span></div>
-        <div><b>The Orkhon Inscriptions</b><span>The oldest Old Turkic texts, 8th century</span></div>
-        <div><b>Mir ʿAli Shir Navaʾi</b><span>Poet of Chagatai Turkic literature</span></div>
-        <div><b>Frankenstein</b><span>Mary Shelley</span></div>
-        <div><b>On Truth and Lies in a Nonmoral Sense</b><span>Friedrich Nietzsche</span></div>
-        <div><b>What Is Enlightenment?</b><span>Immanuel Kant</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="interests">
-    <div class="side">
-      <div class="label">Right now</div>
-      <h2>Current interests</h2>
-    </div>
-    <ul class="interests">
-      <li class="i1">AI products</li>
-      <li class="i2">Algorithmic trading</li>
-      <li class="i3">Central Asian history</li>
-      <li class="i4">Learning Russian</li>
-    </ul>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="label">Contact</div>
-    <h2 class="big">Let's connect</h2>
-    <p>I'm open to internships, collaborations and conversations about AI products, full-stack work and trading systems.</p>
-    <div class="email-row">
-      <a class="email" id="email" href="mailto:Saifullah.nazar123@gmail.com">Saifullah.nazar123@gmail.com</a>
-      <button class="btn" id="copy" type="button">Copy email</button>
-    </div>
-    <div class="copied" id="copied" aria-live="polite"></div>
-    <ul class="social" aria-label="Elsewhere">
-      <li><a href="https://github.com/Saifullah-12art" target="_blank" rel="noopener">GitHub ↗</a></li>
-      <!-- Fill in the URL, then uncomment.
-      <li><a href="https://www.linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">LinkedIn ↗</a></li>
-      <li><a href="https://YOUR-HANDLE.substack.com" target="_blank" rel="noopener">Substack ↗</a></li>
-      <li><a href="https://www.youtube.com/@YOUR-HANDLE" target="_blank" rel="noopener">YouTube ↗</a></li>
-      -->
-    </ul>
-  </section>
-
-  <footer class="foot mono">
-    <span>Saif Ullah Nazari · Bishkek, Kyrgyzstan</span>
-    <span>42.87° N, 74.59° E</span>
-  </footer>
-</div>
-
-<script src="main.js"></script>
+  </div>
+</footer>
 </body>
 </html>

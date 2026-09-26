@@ -1,10 +1,14 @@
 # Deploy only the site itself (allowlist).
 /*
 !index.html
+!work.html
+!about.html
+!ideas.html
 !styles.css
 !main.js
+!config.js
 !favicon.svg
 !og-image.png
-!photo.jpg
+!images
 !fonts
 !vercel.json

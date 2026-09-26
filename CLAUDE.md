@@ -1,24 +1,27 @@
 # saif-portfolio
 
-Personal website for Saif Ullah Nazari (software engineering student at AUCA, Bishkek; building Ascenda).
+Personal website for Saifullah Nazari (software engineering student at AUCA, Bishkek; building Ascenda). Editorial, art-directed; not a developer template.
 
 ## Stack
-- Plain static site: `index.html`, `styles.css`, `main.js`, `favicon.svg`. No build step, no framework.
-- Fonts are self-hosted woff2 in `fonts/` (no Google Fonts requests): Bricolage Grotesque 700–800 (display), IBM Plex Sans 400–600 (body) plus 600 italic (hero accent), IBM Plex Mono 400 and 500 (labels). `@font-face` is at the top of `styles.css`; the Bricolage, Plex Sans and Plex Sans italic latin files are preloaded in `index.html`. Using a new weight or style means adding its file and `@font-face`, otherwise the browser fakes it.
-- Deploy target: Vercel (static). `vercel` from this folder, or import the GitHub repo in the Vercel dashboard.
+- Plain static site, no build step: `index.html` (home), `work.html`, `about.html`, `ideas.html`, `styles.css`, `main.js`, `config.js`, `favicon.svg`, `og-image.png`.
+- Header nav and footer are duplicated in each page; change all four together.
+- `config.js` holds email and social URLs; `main.js` renders them into `[data-social]` / `[data-email]`. The HTML keeps a GitHub + email fallback for no-JS.
+- Fonts are self-hosted woff2 in `fonts/`: Instrument Serif 400 normal + italic (display), IBM Plex Sans 400–600 (body), IBM Plex Mono 400/500 (labels). Using a new weight or style means adding its file and `@font-face`.
+- Deploy: Vercel static with `cleanUrls`. `.vercelignore` is an allowlist; add any new top-level file to it.
 
 ## Run locally
-- `npx serve .` (or open `index.html` directly in a browser).
+- `npm run dev` (serves on :3000), or open `index.html` directly.
 
 ## Design rules
-- All colors are CSS custom properties in `:root` at the top of `styles.css`. Never hard-code a color in a component; add a token.
-- Palette: cobalt `#2B44FF`, coral `#FF5533`, sun `#FFC21A`, mint `#0FB57E` on a cool bright ground `#F4F5FF`, ink `#0E1033`.
+- All colors are CSS custom properties in `:root` at the top of `styles.css`. Never hard-code a color in a component or SVG; add a token (SVG art uses the `.a-*` / `.r1–.r5` classes).
+- Palette: warm paper `#F3F0E7`, ink `#101820`, muted warm gray `#6B665C`, hairlines `#D8D4C9`, one deep navy accent `#1C2B4A` used sparingly. No other hues.
 - Dark mode: tokens are redefined under `@media (prefers-color-scheme: dark)` and `:root[data-theme="dark"]`. Keep both blocks in sync.
-- Bright fills (sun, coral, mint) always use `--on-bright` text; cobalt fills use `--on-cobalt`.
-- Signature look: 2px ink rules between sections, hard offset shadows (`8px 8px 0`) on the hero card and the Ascenda feature.
-- Must work at 400px wide with no horizontal scroll. Respect `prefers-reduced-motion`.
+- Type: huge serif display, italic serif only for one emphasised word per heading, uppercase mono labels at 0.15em tracking.
+- Signature look: 2px ink rules at major breaks, 1px hairlines between chapters, 12-column grid with intentional asymmetry, figures as "plates" with shared grain.
+- Must work at 390px wide with no horizontal scroll. Respect `prefers-reduced-motion`. Motion stays restrained (fade/rise, mask reveals, mild hero parallax).
 
 ## Content rules
-- Only real facts about Saif. Don't invent metrics, GPAs, employers or links.
+- Only real facts about Saifullah. Don't invent metrics, GPAs, employers, titles, dates or links; use `<!-- EDIT: -->` comments for unknowns.
 - Never publish phone number or home address.
-- Missing and wanted: LinkedIn, Substack and YouTube URLs (commented-out placeholders in the contact social row), and `photo.jpg` (commented-out slot under the hero).
+- Tone: early-career, curious, building. Never "expert", "visionary", "successful trader", etc. Trading must not overpower software/building.
+- Missing and wanted: LinkedIn, Substack, YouTube, Instagram URLs (`config.js`), a portrait (`images/portrait.jpg`, slot in `about.html`), real photos for plates, role/date details in `work.html`.
