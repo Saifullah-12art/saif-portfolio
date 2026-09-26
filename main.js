@@ -34,3 +34,10 @@
     }
   });
 })();
+{
+  "name": "saif-portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve . -l 3000"
+  }
+}
