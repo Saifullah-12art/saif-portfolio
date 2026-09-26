@@ -42,4 +42,4 @@ Search the HTML for `EDIT:` and `Image slot` comments.
 - **Portrait:** uncomment the photo slot in `about.html` and add `images/portrait.jpg`.
 - **Work details:** roles, dates and organisation names for startup, teaching and community work.
 - **Essays:** they will live on Substack; see the comment above the list in `ideas.html` for how to link one. Keep "In draft" until then.
-- **Domain:** canonical links, `og:url` and absolute `og:image` point at `https://saif-portfolio.vercel.app`. If the domain changes, update them in all four pages.
+- **Domain:** canonical links, `og:url` and absolute `og:image` point at `https://saifnazari.vercel.app`. If the domain changes, update them in all four pages.

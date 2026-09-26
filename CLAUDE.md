@@ -7,7 +7,7 @@ Personal website for Saifullah Nazari (software engineering student at AUCA, Bis
 - Header nav and footer are duplicated in each page; change all four together.
 - `config.js` holds email and social URLs; `main.js` renders them into `[data-social]` / `[data-email]`. The HTML keeps a GitHub + email fallback for no-JS.
 - Fonts are self-hosted woff2 in `fonts/`: Instrument Serif 400 normal + italic (display), IBM Plex Sans 400–600 (body), IBM Plex Mono 400/500 (labels). Using a new weight or style means adding its file and `@font-face`.
-- Deploy: Vercel static with `cleanUrls`, live at https://saif-portfolio.vercel.app (canonical, `og:url` and absolute `og:image` in every page use it). `.vercelignore` is an allowlist; add any new top-level file to it.
+- Deploy: Vercel static with `cleanUrls`, live at https://saifnazari.vercel.app (canonical, `og:url` and absolute `og:image` in every page use it). `.vercelignore` is an allowlist; add any new top-level file to it.
 
 ## Run locally
 - `npm run dev` (serves on :3000), or open `index.html` directly.
