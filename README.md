@@ -41,5 +41,5 @@ Search the HTML for `EDIT:` and `Image slot` comments.
 - **Photos:** every figure is an SVG plate. To use a photograph instead, put it in `images/` and replace the `<svg>` inside `.plate` with an `<img>` (keep `loading="lazy"` below the fold). The plate adds the shared grain and muted grading.
 - **Portrait:** uncomment the photo slot in `about.html` and add `images/portrait.jpg`.
 - **Work details:** roles, dates and organisation names for startup, teaching and community work.
-- **Essays:** see the comment above the list in `ideas.html` for how to publish one.
-- **Domain:** once the site has its own domain, add `<link rel="canonical">` and make `og:image` absolute (see the comment in each page's `<head>`).
+- **Essays:** they will live on Substack; see the comment above the list in `ideas.html` for how to link one. Keep "In draft" until then.
+- **Domain:** canonical links, `og:url` and absolute `og:image` point at `https://saif-portfolio.vercel.app`. If the domain changes, update them in all four pages.
