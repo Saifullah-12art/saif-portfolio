@@ -22,6 +22,11 @@
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
+  font-family: "IBM Plex Sans"; font-style: italic; font-weight: 600; font-display: swap;
+  src: url("fonts/ibm-plex-sans-600-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
   font-family: "IBM Plex Mono"; font-style: normal; font-weight: 400; font-display: swap;
   src: url("fonts/ibm-plex-mono-400-latin.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -150,14 +155,18 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--sun); outline-o
 /* ---------- hero ---------- */
 .hero {
   display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 56px; align-items: start;
-  padding-block: 64px 80px;
+  padding-block: 80px 120px;
 }
 .hero h1 {
   font-family: var(--display); font-weight: 800;
-  font-size: clamp(48px, 8vw, 96px); line-height: 0.92; letter-spacing: -0.04em;
-  margin: 18px 0 28px; text-wrap: balance;
+  font-size: clamp(52px, 8vw, 96px); line-height: 0.95; letter-spacing: -0.04em;
+  margin: 18px 0 28px;
 }
-.hero h1 span { color: var(--coral-heading); }
+.hero h1 > * { display: block; }
+.hero h1 em {
+  font-family: var(--body); font-style: italic; font-weight: 600; letter-spacing: -0.03em;
+  color: var(--coral-heading);
+}
 .hero .lede { font-size: 19px; line-height: 1.55; max-width: 34em; margin: 0 0 30px; }
 .hero .lede em {
   font-style: normal; font-weight: 600; color: var(--on-bright);
@@ -195,10 +204,17 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--sun); outline-o
 }
 .day footer b { color: var(--on-bright); background: var(--sun); font-weight: 600; padding: 0 5px; border-radius: 4px; }
 
+/* ---------- photo ---------- */
+.photo { margin: 0 0 120px; }
+.photo img {
+  display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover;
+  border-radius: 22px; border: 2px solid var(--ink); box-shadow: 8px 8px 0 var(--coral);
+}
+
 /* ---------- sections ---------- */
 section.block {
   display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px;
-  padding-block: 64px; border-top: 2px solid var(--ink);
+  padding-block: 96px; border-top: 2px solid var(--ink);
 }
 section.block > .side h2 {
   font-family: var(--display); font-weight: 800; font-size: 28px; letter-spacing: -0.02em;
@@ -222,6 +238,7 @@ section.block > .side h2 {
 .feature p { margin: 0; max-width: 60ch; }
 .feature .meta { display: flex; gap: 10px 22px; flex-wrap: wrap; font-size: 14px; opacity: 0.85; }
 .feature .meta a { color: var(--on-bright); font-weight: 600; }
+.feature .result { color: var(--on-bright); }
 
 /* ---------- project rows ---------- */
 .rows { list-style: none; margin: 0; padding: 0; }
@@ -232,6 +249,12 @@ section.block > .side h2 {
 .rows li:first-child { border-top: 0; padding-top: 0; }
 .rows h3 { font-size: 18px; font-weight: 600; margin: 0 0 4px; }
 .rows p { margin: 0; color: var(--muted); font-size: 15px; max-width: 62ch; }
+.cat {
+  display: block; margin-bottom: 4px; font-family: var(--mono); font-size: 11.5px;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--link);
+}
+.result { margin: 6px 0; font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--mint-text); }
+.result::before { content: "→ "; }
 .rows .stack { margin-top: 8px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
 
 .chip {
@@ -290,11 +313,22 @@ cite, cite i { font-style: normal; }
 .shelf b { display: block; font-weight: 600; }
 .shelf span { color: var(--muted); font-size: 14px; }
 
+/* ---------- interests ---------- */
+.interests { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px; align-content: start; }
+.interests li {
+  font-family: var(--display); font-weight: 700; font-size: clamp(18px, 2.2vw, 22px); letter-spacing: -0.01em;
+  padding: 10px 20px; border-radius: 999px; border: 2px solid var(--ink);
+}
+.interests .i1 { background: var(--cobalt); color: var(--on-cobalt); }
+.interests .i2 { background: var(--sun); color: var(--on-bright); }
+.interests .i3 { background: var(--coral); color: var(--on-bright); }
+.interests .i4 { background: var(--mint); color: var(--on-bright); }
+
 /* ---------- contact ---------- */
 .contact {
   background: var(--coral); color: var(--on-bright);
   border-radius: 22px; padding: clamp(28px, 5vw, 56px);
-  margin-block: 24px 40px;
+  margin-block: 36px 60px;
 }
 .contact .label { color: var(--on-bright); }
 .contact h2.big {
@@ -311,6 +345,11 @@ cite, cite i { font-style: normal; }
 .contact .btn { border-color: var(--on-bright); color: var(--on-bright); }
 .contact .btn:hover { box-shadow: 4px 4px 0 var(--on-bright); }
 .copied { font-size: 14px; font-weight: 600; min-height: 1.3em; }
+.social {
+  list-style: none; margin: 18px 0 0; padding: 20px 0 0; border-top: 2px solid var(--on-bright);
+  display: flex; flex-wrap: wrap; gap: 10px 28px;
+}
+.social a { color: var(--on-bright); font-weight: 600; font-size: 16px; }
 
 /* ---------- footer ---------- */
 .foot {
@@ -320,8 +359,9 @@ cite, cite i { font-style: normal; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; gap: 44px; padding-block: 44px 60px; }
-  section.block { grid-template-columns: 1fr; gap: 20px; padding-block: 48px; }
+  .hero { grid-template-columns: 1fr; gap: 44px; padding-block: 56px 90px; }
+  section.block { grid-template-columns: 1fr; gap: 20px; padding-block: 72px; }
+  .photo { margin-bottom: 90px; }
   .skills { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 520px) {
@@ -333,6 +373,7 @@ cite, cite i { font-style: normal; }
   .feature { padding: 22px; }
   .feature h3 { font-size: 34px; }
   .day { box-shadow: 6px 6px 0 var(--sun); }
+  .photo img { border-radius: 16px; box-shadow: 6px 6px 0 var(--coral); }
   .email { font-size: 14px; padding: 12px 14px; }
 }
 

@@ -20,6 +20,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ibm-plex-sans-600-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -30,15 +31,15 @@
       <a href="#work">Work</a>
       <a href="#skills">Skills</a>
       <a href="#roadmap">Roadmap</a>
-      <a href="#reading">Reading</a>
+      <a href="#thinking">Thinking</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
     <div class="reveal">
-      <div class="label">Software Engineering · AUCA · Bishkek</div>
-      <h1>Saif Ullah <span>Nazari</span></h1>
+      <div class="label">Saif Ullah Nazari · AUCA · Bishkek</div>
+      <h1><span>Student.</span> <em>Builder.</em> <span>Stoic.</span></h1>
       <p class="lede">I'm a software engineering student at the American University of Central Asia. I'm building <em>Ascenda</em>, an AI-powered app that helps students plan their day and hold each other to it. I work across C++, Python and the web, and I'm learning in public on the way to cloud and machine learning.</p>
       <div class="cta">
         <a class="btn primary" href="https://ascenda-omega.vercel.app" target="_blank" rel="noopener">Try Ascenda ↗</a>
@@ -65,6 +66,12 @@
     </aside>
   </section>
 
+  <!-- Wide photo: add photo.jpg to the project root, then uncomment. Set width/height to the file's real pixel size.
+  <figure class="photo">
+    <img src="photo.jpg" alt="Saif Ullah Nazari" width="1600" height="900" loading="lazy" decoding="async">
+  </figure>
+  -->
+
   <section class="block" id="work">
     <div class="side">
       <div class="label">Work</div>
@@ -73,10 +80,11 @@
     <div>
       <article class="feature">
         <div class="feature-top">
-          <span class="label">Main project</span>
+          <span class="label">Main project · AI product</span>
           <span class="chip live">Live</span>
         </div>
         <h3>Ascenda</h3>
+        <div class="result">Live on web</div>
         <p>An AI-powered daily routine and accountability app for university students. You set your goals, Ascenda builds a realistic routine around them with Claude, and your friends on campus keep you honest. The web version is live, and I'm launching it on the AUCA campus first.</p>
         <div class="meta">
           <span>AI routine generation · Social accountability · Modular architecture</span>
@@ -87,6 +95,7 @@
       <ul class="rows">
         <li>
           <div>
+            <span class="cat">Algorithmic trading</span>
             <h3>XAUUSD trading bot</h3>
             <p>An automated gold trading system for MetaTrader 5. Version one runs a moving-average crossover with an RSI filter, a dedicated risk-management module, trade logging and a monitoring dashboard. The architecture is modular so machine-learning models can plug in later.</p>
             <div class="stack">Python · MetaTrader5 bridge · pandas</div>
@@ -95,14 +104,17 @@
         </li>
         <li>
           <div>
+            <span class="cat">E-commerce</span>
             <h3>Kenyan Coffee Co. store</h3>
-            <p>Building a Shopify storefront for a specialty coffee brand as a collaborator through my Shopify Partner account: catalogue of 9 products and 27 variants, brand setup and theme work.</p>
+            <p>Building a Shopify storefront for a specialty coffee brand as a collaborator through my Shopify Partner account: product catalogue, brand setup and theme work.</p>
+            <div class="result">9 products · 27 variants</div>
             <div class="stack">Shopify · Liquid · product CSV import</div>
           </div>
           <span class="chip client">Client work</span>
         </li>
         <li>
           <div>
+            <span class="cat">Systems</span>
             <h3>Multithreaded HTTP server in C</h3>
             <p>A web server built on a producer–consumer model with POSIX threads: one thread accepts connections into a bounded queue, a worker pool serves them.</p>
             <div class="stack">C · pthreads · sockets</div>
@@ -111,6 +123,7 @@
         </li>
         <li>
           <div>
+            <span class="cat">Desktop app</span>
             <h3>Qt6 text editor</h3>
             <p>A desktop notepad written in C++ with Qt6: edit and format menus, text transformations, a spell checker and syntax highlighting, built and tested through GitHub Actions CI.</p>
             <div class="stack">C++ · Qt6 · GitHub Actions</div>
@@ -119,6 +132,7 @@
         </li>
         <li>
           <div>
+            <span class="cat">Low-level</span>
             <h3>ARM assembly series</h3>
             <p>Nine low-level programs covering arithmetic, condition flags, branching, memory addressing modes and subroutines, written and debugged in Keil µVision.</p>
             <div class="stack">ARM Assembly · Keil µVision</div>
@@ -127,6 +141,7 @@
         </li>
         <li>
           <div>
+            <span class="cat">Content</span>
             <h3>Footie Lovers</h3>
             <p>A football YouTube channel: match previews for the 2026 World Cup, league histories and debate-style countdowns like the greatest solo goal ever scored.</p>
             <div class="stack">Scriptwriting · Video</div>
@@ -213,10 +228,10 @@
     </div>
   </section>
 
-  <section class="block" id="reading">
+  <section class="block" id="thinking">
     <div class="side">
       <div class="label">Off the keyboard</div>
-      <h2>Reading &amp; thinking</h2>
+      <h2>How I think</h2>
     </div>
     <div>
       <blockquote>You have power over your mind, not outside events.</blockquote>
@@ -224,6 +239,15 @@
       <div class="prose">
         <p>I think of myself as a Stoic. Most of what I build comes back to one question: how do you keep showing up on the days you don't feel like it? Outside of code I read philosophy and the history and literature of Central Asia, and I'm learning Russian.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="block" id="reading">
+    <div class="side">
+      <div class="label">The shelf</div>
+      <h2>What I'm reading</h2>
+    </div>
+    <div>
       <div class="shelf">
         <div><b>Meditations</b><span>Marcus Aurelius</span></div>
         <div><b>The Orkhon Inscriptions</b><span>The oldest Old Turkic texts, 8th century</span></div>
@@ -235,15 +259,36 @@
     </div>
   </section>
 
+  <section class="block" id="interests">
+    <div class="side">
+      <div class="label">Right now</div>
+      <h2>Current interests</h2>
+    </div>
+    <ul class="interests">
+      <li class="i1">AI products</li>
+      <li class="i2">Algorithmic trading</li>
+      <li class="i3">Central Asian history</li>
+      <li class="i4">Learning Russian</li>
+    </ul>
+  </section>
+
   <section class="contact" id="contact">
     <div class="label">Contact</div>
-    <h2 class="big">Building something? Let's talk.</h2>
+    <h2 class="big">Let's connect</h2>
     <p>I'm open to internships, collaborations and conversations about AI products, full-stack work and trading systems.</p>
     <div class="email-row">
       <a class="email" id="email" href="mailto:Saifullah.nazar123@gmail.com">Saifullah.nazar123@gmail.com</a>
       <button class="btn" id="copy" type="button">Copy email</button>
     </div>
     <div class="copied" id="copied" aria-live="polite"></div>
+    <ul class="social" aria-label="Elsewhere">
+      <li><a href="https://github.com/Saifullah-12art" target="_blank" rel="noopener">GitHub ↗</a></li>
+      <!-- Fill in the URL, then uncomment.
+      <li><a href="https://www.linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      <li><a href="https://YOUR-HANDLE.substack.com" target="_blank" rel="noopener">Substack ↗</a></li>
+      <li><a href="https://www.youtube.com/@YOUR-HANDLE" target="_blank" rel="noopener">YouTube ↗</a></li>
+      -->
+    </ul>
   </section>
 
   <footer class="foot mono">

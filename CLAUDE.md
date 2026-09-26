@@ -4,7 +4,7 @@ Personal website for Saif Ullah Nazari (software engineering student at AUCA, Bi
 
 ## Stack
 - Plain static site: `index.html`, `styles.css`, `main.js`, `favicon.svg`. No build step, no framework.
-- Fonts are self-hosted woff2 in `fonts/` (no Google Fonts requests): Bricolage Grotesque 700–800 (display), IBM Plex Sans 400–600 (body), IBM Plex Mono 400 and 500 (labels). `@font-face` is at the top of `styles.css`; the Bricolage and Plex Sans latin files are preloaded in `index.html`. Using a new weight or style means adding its file and `@font-face`, otherwise the browser fakes it.
+- Fonts are self-hosted woff2 in `fonts/` (no Google Fonts requests): Bricolage Grotesque 700–800 (display), IBM Plex Sans 400–600 (body) plus 600 italic (hero accent), IBM Plex Mono 400 and 500 (labels). `@font-face` is at the top of `styles.css`; the Bricolage, Plex Sans and Plex Sans italic latin files are preloaded in `index.html`. Using a new weight or style means adding its file and `@font-face`, otherwise the browser fakes it.
 - Deploy target: Vercel (static). `vercel` from this folder, or import the GitHub repo in the Vercel dashboard.
 
 ## Run locally
@@ -21,4 +21,4 @@ Personal website for Saif Ullah Nazari (software engineering student at AUCA, Bi
 ## Content rules
 - Only real facts about Saif. Don't invent metrics, GPAs, employers or links.
 - Never publish phone number or home address.
-- Missing and wanted: GitHub, LinkedIn, Substack and YouTube URLs, and a photo.
+- Missing and wanted: LinkedIn, Substack and YouTube URLs (commented-out placeholders in the contact social row), and `photo.jpg` (commented-out slot under the hero).
