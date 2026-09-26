@@ -4,8 +4,8 @@ window.SITE = {
   email: "Saifullah.nazar123@gmail.com",
   social: {
     github: "https://github.com/Saifullah-12art",
-    linkedin: "",   // e.g. "https://www.linkedin.com/in/your-handle"
-    substack: "",   // e.g. "https://your-handle.substack.com"
+    linkedin: "https://www.linkedin.com/in/saifullah-nazari-b4b2693b4",
+    substack: "https://substack.com/@saifullahnazari32",
     youtube: "",    // e.g. "https://www.youtube.com/@your-handle"
     instagram: "",  // e.g. "https://www.instagram.com/your-handle"
   },
